@@ -1,0 +1,14 @@
+Testsysteme aus Promotion von Norbert Engel (1994, Seite 59):
+"Hydrologische Simulation der Abflusstransformation in Kanalisationsnetzen"
+
+Jeweils 20 Haltungen in Reihe geschaltet, jede Haltung 50 m lang, alle Kreisprofil
+Als Zufluss wurde eine Einleitungswelle generiert mit einem 15-min Regen mit r = 100 l/sha
+
+tstEng1: D = 1,2 m, Is = 0,2 %, kb = 1,5 mm ("strömender Abfluss, max h/D < 0,5")
+tstEng2: D = 1,0 m, Is = 0,2 %, kb = 1,5 mm ("strömender Abfluss, max h/D > 0,5")
+tstEng3: D = 1,0 m, Is = 0,6 %, kb = 1,5 mm ("schießender Abfluss")
+tstEng4: D = 0,7 m, Is = 0,2 %, kb = 1,5 mm ("Druckabfluss")
+
+tstEng5: ("Rückstau")
+Haltungen 1 - 18 und 20: D = 1,2 m, Is = 0,2 %, kb = 1,5 mm
+Haltung 19: D = 0,6 m, Is = 0,2 %, kb = 1,5 mm

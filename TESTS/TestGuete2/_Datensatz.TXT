@@ -1,0 +1,5 @@
+Datensatzbeschreibung:
+----------------------
+
+Einfaches Gerinnemodell mit einem Zufluss bzw. Erzeuger (Einzeleinleiter)
+

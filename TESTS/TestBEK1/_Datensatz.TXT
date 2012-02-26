@@ -1,0 +1,12 @@
+Log-Datei für Verzeichnis:
+
+testbek1: Testdatensatz für Becken
+testbek2: Testdatensatz für Becken mit regelbasierter Steuerung
+
+Um den Vergleich mit SMUSI zu ermöglichen, habe ich einen Einzeleinleiter verwendet, der eine mit Hilfe von "Konvert" von asc- ins zre-Format umgewandelte Abflussganglinie einliest.
+
+
+
+
+
+

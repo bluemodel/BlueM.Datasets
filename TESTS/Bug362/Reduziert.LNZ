@@ -1,0 +1,35 @@
+*Landnutzungen (*.LNZ)
+*=====================
+*
+*|------|---------------------------------------|------------------------------|
+*| ID   |       Bed.Grad  Bfl.Indx              |        Beschreibung          |
+*|------|---------------------------------------|------------------------------|
+*|      |  WE   BG   jgg  BFI  jgg LNZ  VG  Kst |                              |
+*|  -   |  m     %    -    -    -  jgg  %       |              -               |
+*|-<-->-|<--->-<--->-<->-<--->-<->-<->-<->-<--->|<---------------------------->|
+ |    1 |  1.3    75       2.5                  0|222 (Obst)                    |
+ |    2 | 1.43  92.5  6      3  2  10           0|231 (Wiese/Weise)             |
+ |    3 | 1.43    75  7    2.5  1   8           0|242 (Parzellen)               |
+ |    4 | 0.93    80  7      3  1   8           0|243 (Landw./Natur)            |
+ |    5 |  1.5    90         4                  0|311 (Laubwald (neu))          |
+ |    6 |  2.1    90        11  3   9           0|312 (Nadewald (neu))          |
+ |    7 |  1.9    85  5      7  4   9           0|313 (Mischwald (neu))         |
+ |    8 |  0.3    10         1                  0|412 (Wasser/ Feuchtflächen)   |
+ |    9 |    2    60         3                   |Wein                          |
+ |   10 |    1    90         3                   |Futerrueben / Zuckerrueben    |
+ |   11 |    1    90         4                   |Wintergetreide Roggen         |
+ |   12 |  0.7    90         2                   |Sonderkultur                  |
+ |   13 |    2    40         3                   |Mais / Sonnenblumen           |
+ |   14 |    2    90         8                   |Gruenland ald Mittel f. Feld  |
+ |   15 |    2    70         4                   |Sommergetreide Hafer Durum    |
+ |   16 |    1    50         2                   |Luzerne Raps                  |
+ |   17 |    1    90         2                   |Gruenland                     |
+ |   18 |    1    90         2                   |Gemuese und Gartengewaechse   |
+ |   19 |    1    60         3                   |unversiegelter Dorfbereich    |
+ |   20 |    1    90         3                   |Nadelwald                     |
+ |   21 |    1    90         3                   |Laubwald                      |
+ |   22 |  0.3    50       1.5                  0|112 (Siedlung)                |
+ |   23 |  0.3    40         1                  0|121 (Industrie)               |
+ |   24 |  0.5  72.5      1.75                  0|142 (Sportanlagen)            |
+ |   25 | 0.75    40         2                  0|211 (Brache)                  |
+*|-<-->-|<--->-<--->-<->-<--->-<->-<->-<->-<--->|<---------------------------->|

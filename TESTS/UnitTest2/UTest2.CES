@@ -1,0 +1,19 @@
+*Kombinatorik
+*=====================
+*
+*|---------------------|----------------------|--------------------------------|-------|---------------------------|-------|
+*|                     |                      | Schaltung (Achtung Leerzeichen)|       | Die zugehörigen Bauwerke  | Test  |
+*|                     |                      |----------|----------|----------| Kost. | für die Kostenkalkulation | Modus |
+*| Position            | Maßnahme             | VerZw 1  | VerZw 2  | VerZw 3  |  Typ  | BW 1 | BW 2 | BW 3 | BW 4 | aus=0 |
+*|-<----------------->-|-<------------------>-|-<-->-|-x-|-<-->-|-x-|-<-->-|-x-|-<--->-|-<-->-|-<-->-|-<-->-|-<-->-|-<--->-|
+ | Oben                | HRB T100             | V100 | 1 |   X  | X |   X  | X |   1   | T100 |  X   |  X   |  X   |   0   |
+ | Oben                | Nullvariante         | V100 | 0 | V101 | 1 |   X  | X |   0   | S100 |  X   |  X   |  X   |   0   |
+ | Oben                | GerinneModifikation  | V100 | 0 | V101 | 0 |   X  | X |   1   | S101 |  X   |  X   |  X   |   0   |
+ | Mitte               | Talsperre T200       | V200 | 1 | V201 | 1 |   X  | X |   1   | T200 |  X   |  X   |  X   |   0   |
+ | Mitte               | Nullvariante         | V200 | 1 | V201 | 0 |   X  | X |   0   | S200 |  X   |  X   |  X   |   0   |
+ | Mitte               | GerinneModifikation  | V200 | 0 | V202 | 1 |   X  | X |   1   | S201 | S202 | S203 |  X   |   0   |
+ | Mitte               | Aufteilung           | V200 | 0 | V202 | 0 |   X  | X |   1   | S220 | S221 |  X   |  X   |   0   |
+ | Unten               | Polder               | V300 | 1 | V301 | 1 |   X  | X |   1   | T300 | S301 |  X   |  X   |   0   |
+ | Unten               | Nullvariante         | V300 | 1 | V301 | 0 |   X  | X |   0   | S300 |  X   |  X   |  X   |   0   |
+ | Unten               | HRB T301             | V300 | 0 |   X  | X |   X  | X |   1   | T301 |  X   |  X   |  X   |   0   |
+*|---------------------|----------------------|------|---|------|---|------|---|-------|------|------|------|------|-------|

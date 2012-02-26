@@ -1,0 +1,4 @@
+﻿Initialisierungswerte für Gewässergütemodell/LaPipe
+|O2        |SNH       |SI        |SS        |SCON      |SALK      |SIC       |SPDis     |XABM      |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+|      1.0 |       1.0|       1.0|       1.0|       1.0|       1.0|       1.0|       1.0|       1.0|

@@ -1,0 +1,5 @@
+Datensatzbeschreibung:
+----------------------
+
+Einfaches Gerinnemodell ohne Zufluss bzw. Erzeuger (Flächen etc.)
+

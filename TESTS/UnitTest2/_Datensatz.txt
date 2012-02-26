@@ -1,0 +1,8 @@
+Lauffähiger Testdatensatz für die kombinatorische und parametrische Optimierung.
+Talsperren entleeren noch nicht. Neuer Systemzustand erforderlich.
+T301 evtl. etwas zu groß. Übernimmt dann alles.
+Bei einigen sind die Gefälle sehr klein.
+Zeitreihe mit anbei.
+
+Rechnet jetzt mit Kosten.
+.ZIE steht auf Multiobjective

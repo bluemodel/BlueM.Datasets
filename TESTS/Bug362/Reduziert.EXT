@@ -1,0 +1,17 @@
+*Zeitreihen (*.EXT)
+*==================
+*
+*|-----|------|-----|----------------------------------------------------------------------------------|
+*|Datei| Einh |Intrp| Pfad zur Zeitreihendatei                                                         |Bezeichnung
+*| Nr. |      |     |                                                                                  |
+*|-<->-|-<-->-|-<->-|-<--------1---------2---------3---------4---------5---------6---------7--------->-|
+*|  1  | mm   |  5  | ZRE\14output.zre                                                                 |NiederschlagC
+ |  2  | °C   |  1  | ZRE\74_output.bin                                                                |Lufttemperatur 
+*|  3  | mm   |  5  | ZRE\74output.zre                                                                 |NiederschlagH
+ |  4  | mm   |  5  | ZRE\34output.bin                                                                 |NiederschlagM
+*|  5  | mm   |  5  | ZRE\24output.zre                                                                 |NiederschlagF
+*|  6  | mm   |  5  | ZRE\44output.zre                                                                 |NiederschlagL
+ |  7  | mm   |  5  | ZRE\54output.bin                                                                 |NiederschlagS
+ |  8  | mm   |  5  | ZRE\64output.bin                                                                 |NiederschlagH
+ |  9  | mm   |  5  | ZRE\VERDUNSTUNG.bin                                                              |Verdunstung 
+*|-----|------|-----|----------------------------------------------------------------------------------|

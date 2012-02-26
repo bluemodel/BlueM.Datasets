@@ -1,0 +1,57 @@
+*Systemlogik (*.SYS)
+*===================
+*
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
+*|       S  y  s  t  e  m        |    Zulauf      |      Ablauf    |WEL|BIL|   X   |   Y   |O|S|
+*|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |       |       | | |
+*|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|<----->|<----->|+|+|
+ | natürl. Fläche         | A500 |                | S900           |   |   | 7000.0| 2000.0|2|0|natürl. Fläche
+ | natürl. Fläche         | A523 |                | S923           | J |   |19000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S923 | A523           | S922           | J |   |18500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A522 |                | S922           |   |   |18000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S922 | A522 S923      | S921           |   |   |17500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A521 |                | S921           |   |   |17000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S921 | A521 S922      | S920           |   |   |16500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A520 |                | S920           |   |   |16000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S920 | A520 S921      | S919           |   |   |15500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A519 |                | S919           |   |   |15000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S919 | A519 S920      | S918           |   |   |14500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A518 |                | S918           |   |   |14000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S918 | A518 S919      | S917           |   |   |13500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A517 |                | S917           |   |   |13000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S917 | A517 S918      | S916           |   |   |12500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A516 |                | S916           |   |   |12000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S916 | A516 S917      | S915           |   |   |11500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A515 |                | S915           |   |   |11000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S915 | A515 S916      | S914           |   |   |10500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A514 |                | S914           |   |   |10000.0|14000.0|1|0|natürl. Fläche
+ | Sammler / Gerinne      | S914 | A514 S915      | S913           |   |   | 9500.0|15500.0|3|0|Sammler / Gerinne
+ | natürl. Fläche         | A513 |                | S913           |   |   | 7000.0|15000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S913 | A513 S914      | S912           |   |   | 8500.0|14500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A512 |                | S912           |   |   | 7000.0|14000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S912 | A512 S913      | S911           |   |   | 8500.0|13500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A511 |                | S911           |   |   | 7000.0|13000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S911 | A511 S912      | S910           |   |   | 8500.0|12500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A510 |                | S910           |   |   | 7000.0|12000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S910 | A510 S911      | S909           |   |   | 8500.0|11500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A509 |                | S909           |   |   | 7000.0|11000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S909 | A509 S910      | S908           |   |   | 8500.0|10500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A508 |                | S908           |   |   | 7000.0|10000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S908 | A508 S909      | S907           |   |   | 8500.0| 9500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A507 |                | S907           |   |   | 7000.0| 9000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S907 | A507 S908      | S906           |   |   | 8500.0| 8500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A506 |                | S906           |   |   | 7000.0| 8000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S906 | A506 S907      | S905           |   |   | 8500.0| 7500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A505 |                | S905           |   |   | 7000.0| 7000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S905 | A505 S906      | S904           |   |   | 8500.0| 6500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A504 |                | S904           |   |   | 7000.0| 6000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S904 | A504 S905      | S903           |   |   | 8500.0| 5500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A503 |                | S903           |   |   | 7000.0| 5000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S903 | A503 S904      | S902           |   |   | 8500.0| 4500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A502 |                | S902           |   |   | 7000.0| 4000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S902 | A502 S903      | S901           |   |   | 8500.0| 3500.0|4|0|Sammler / Gerinne
+ | natürl. Fläche         | A501 |                | S901           |   |   | 7000.0| 3000.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S901 | A501 S902      | S900           |   |   | 8500.0| 2500.0|4|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S900 | A500 S901      | ZPG            |   |   | 8500.0| 1500.0|4|0|Sammler / Gerinne
+ | ZIELPEGEL              | ZPG  | S900           |                |   |   | 7000.0| 1000.0|3|0|ZIELPEGEL
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|

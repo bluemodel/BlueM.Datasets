@@ -1,0 +1,16 @@
+Datensatzbeschreibung:
+----------------------
+
+NA-Modell (Abflussbeiwert) mit Talsperre - Langzeitsimulation
+
+Autokalibrierung:
+-----------------
+
+Optimierungsziele:
+- Summe der Fehlerquadrate
+- Volumenfehler
+
+Optimierungsparameter:
+- Basisabfluss
+- PSI (Abflussbeiwert)
+- Retentionskonstanten

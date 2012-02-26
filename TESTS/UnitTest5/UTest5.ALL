@@ -1,0 +1,83 @@
+*Allgemeine Angaben (*.ALL)
+*==========================
+
+ Bezeichnung.....................: Unittest
+
+*Hauptueberschriften:
+*--------------------
+ ................................: BlueM - 2EZG2EFL
+ ................................:
+ ................................:
+
+*Simulations-Zeitraum:
+*---------------------             TT.MM.JJJJ hh:mm - TT.MM.JJJJ hh:mm
+ SimBeginn - SimEnde ............: 12.04.1994 19:30 - 12.04.1994 20:30
+
+*Zeitschritt:
+*------------
+ Zeitschrittlaenge [min] ........: 5
+ Zeitschritt Monat = M ..........:
+
+*Anfangsbedingungen:
+*-------------------
+ Muldenverluste [mm] ............: 1
+ Anfangsverlust [%] .............: 100
+ Gerinneabfluss [% von MQ] ......: 100
+ Anfangsbeckenfuellung [%] ......: 100
+ Anfangsbodenfeuchte [%] ........: 100
+
+*Simulationsoptionen:
+*-------------------
+ Kontrollfunktionen ...... [J/N] : J
+ Berechnung Zielfunktion   [J/N] : N
+
+*Berechnungsparameter:
+*--------------------
+ Exponent Abweichungen Sollwert .: 0
+ Fehlerabweichung am Pegel [%] ..: 0
+ Fehlerabweichung Zielfkt. [%] ..: 0
+
+*Ausgabeoptionen [J/N]:
+*----------------
+ Ausgabe Maximalereignisse [J/N] : N
+ Bilanzausgabe ........... [J/N] : J
+ ... Wahrscheinlichkeiten  [J/N] : N
+ Ganglinienausgabe ....... [J/N] : J
+ ... CSV-Format .......... [J/N] : J
+ ... Binaerausgabe ....... [J/N] : N
+ Animation ............... [J/N] : N
+
+
+*Optimierung:
+*------------
+ Optimierung ............. [J/N] : N
+ Optimierungsstufe ....... [1-3] : 1
+*... 1=nur Funktion
+*... 2=nur Zeitabhängigkeit
+*... 3=Funktion + Zeitabhängigkeit
+
+*DiffQuellen:
+*-------------
+ Berechnung ...............[0-4] : 1
+ Anzahl Stoffe ............[0-99]: 6
+*... 0=keine Berücksichtiung
+*... 1=konstante Werte je EFL und Abflusspfad (in EFL-Datei)
+*... 2=Berechnung konstanter Werte je EFL und Abflusspfad (abhänging von Landnutzung, Bodentyp, Jahresniederschlag)
+*... 3=Berchnung eines Jahresgangs in Tagesschritten (?? Umsetzung noch offen)
+*... 4=Kopplung/Integration eines externen Modells (SWAT, etc. ?? noch offen)
+*... Anzahl der Stoffe in der Datei *.DIF 
+
+*Erw. Ausgabeoptionen:
+*-------------
+ EFL-Wellenausgabe (LEFLWELOUT). : J
+ EFL-Bodenkennwerte (LEFLOUT)... : J
+ DIF-Testausgabe (LDIFOUT) ..... : J
+* LTSOUT: (Kontroll)Ausgabe der einzelnen Schritte der Simulation (Welche Schritt wurde abgearbeitet?/Welche Funktion(Routin) wurde aufgerfuen?) 
+ LTSTOUT ....................... : J
+ LBFFKT ........................ : J
+ LBFOUT ........................ : J
+ 
+
+
+*Beschreibung:
+*-------------

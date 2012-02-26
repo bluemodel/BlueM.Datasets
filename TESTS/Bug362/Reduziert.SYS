@@ -1,0 +1,16 @@
+*Systemlogik (*.SYS)
+*===================
+*
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
+*|       S  y  s  t  e  m        |    Zulauf      |      Ablauf    |WEL|BIL|   X   |   Y   |O|S|
+*|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |       |       | | |
+*|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|<----->|<----->|+|+|
+ | ZIELPEGEL              | ZPG  | S05            |                |   |   |12500.0| 6000.0|4|0|ZIELPEGEL
+ | Sammler / Gerinne      | S05  | A01  S06       | ZPG            | J |   |12500.0| 4500.0|1|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S06  | S07  S18       | S05            |   |   |12500.0| 3000.0|1|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S18  | A03            | S06            | J |   |11000.0| 2500.0|2|0|Sammler / Gerinne
+ | natürl. Fläche         | A03  |                | S18            | J | J | 9500.0| 2500.0|2|0|natürl. Fläche
+ | Sammler / Gerinne      | S07  | A02            | S06            | J |   |12500.0| 2000.0|1|0|Sammler / Gerinne
+ | natürl. Fläche         | A02  |                | S07            | J | J |12500.0| 1000.0|1|0|natürl. Fläche
+ | natürl. Fläche         | A01  |                | S05            | J | J |15000.0| 3500.0|1|0|natürl. Fläche
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|

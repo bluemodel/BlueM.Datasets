@@ -1,0 +1,16 @@
+ 2500 Die Anteilsumme der Tagesgang-Nr. ........  1
+      weicht um mehr als 1 % vom Mittel ab !
+ 2700 Die Anteilsumme der Wochengang Nr. ......   1
+      weicht um mehr als 1 % vom Mittel ab !
+ 2600 Die Anteilsumme der Jahresgang Nr. .......  1
+      weicht um mehr als 1 % vom Mittel ab !
+ 2600 Die Anteilsumme der Jahresgang Nr. .......  2
+      weicht um mehr als 1 % vom Mittel ab !
+ 1303 Beim Transportelement ..................  S100
+      ist die Translationszeit
+      kleiner als der Zeitschritt.
+      Es findet keine Translation statt!
+ 1303 Beim Transportelement ..................  SEND
+      ist die Translationszeit
+      kleiner als der Zeitschritt.
+      Es findet keine Translation statt!

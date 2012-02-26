@@ -1,0 +1,73 @@
+
+*Allgemeine Angaben (*.ALL)
+*==========================
+
+ Bezeichnung.....................: Reduziert
+
+*Hauptueberschriften:
+*--------------------
+ ................................:
+ ................................:
+ ................................:
+
+*Simulations-Zeitraum:
+*---------------------             TT.MM.JJJJ hh:mm - TT.MM.JJJJ hh:mm
+ SimBeginn - SimEnde ............: 01/05/2004 00:00 - 30/10/2004 00:00
+
+*Zeitschritt:
+*------------
+ Zeitschrittlaenge [min] ........: 180
+ Zeitschritt Monat = M ..........:
+
+*Anfangsbedingungen:
+*-------------------
+ Muldenverluste [mm] ............: 1
+ Anfangsverlust [%] .............: 100
+ Gerinneabfluss [% von MQ] ......: 100
+ Anfangsbeckenfuellung [%] ......: 100
+ Anfangsbodenfeuchte [%] ........: 100
+
+*Simulationsoptionen:
+*-------------------
+ Kontrollfunktionen ...... [J/N] : J
+ Berechnung Zielfunktion   [J/N] : N
+
+*Berechnungsparameter:
+*--------------------
+ Exponent Abweichungen Sollwert .: 0
+ Fehlerabweichung am Pegel [%] ..: 0
+ Fehlerabweichung Zielfkt. [%] ..: 0
+
+*Ausgabeoptionen:
+*----------------
+ Ausgabe Maximalereignisse [J/N] : N
+ Bilanzausgabe ........... [J/N] : N
+ ... Wahrscheinlichkeiten  [J/N] : N
+ Ganglinienausgabe ....... [J/N] : J
+ ... CSV-Format .......... [J/N] : J
+ ... Binaerausgabe ....... [J/N] : N
+ Animation ............... [J/N] : N
+
+*Optimierung:
+*------------
+ Optimierung ............. [J/N] : N
+ Optimierungsstufe ....... [1-3] : 1
+*... 1=nur Funktion
+*... 2=nur Zeitabhängigkeit
+*... 3=Funktion + Zeitabhängigkeit
+
+*Beschreibung:
+*-------------
+
+*DiffQuellen:
+*-------------
+ Berechnung ...............[0-4] : 0
+ Anzahl Stoffe ............[0-99]: 6
+
+*... 0=keine Berücksichtiung
+*... 1=konstante Werte je EFL und Abflusspfad (in EFL-Datei)
+*... 2=Berechnung konstanter Werte je EFL und Abflusspfad (abhänging von Landnutzung, Bodentyp, Jahresniederschlag)
+*... 3=Berchnung eines Jahresgangs in Tagesschritten (?? Umsetzung noch offen)
+*... 4=Kopplung/Integration eines externen Modells (SWAT, etc. ?? noch offen)
+
+*... Anzahl der Stoffe in der Datei *.DIF 
