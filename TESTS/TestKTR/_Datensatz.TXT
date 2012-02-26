@@ -1,0 +1,12 @@
+Log-Datei für Verzeichnis:
+
+testktr1: Testdatensatz für Becken mit regelbasierter Steuerung
+testktr2: Testdatensatz für Regenüberläufe mit regelbasierter Steuerung
+testktr3: Testdatensatz für Verzweigungen mit regelbasierter Steuerung
+testktr4: Testdatensatz für parallele Becken mit regelbasierter Steuerung, Test der Gruppenkontrollfunktion
+
+
+
+
+
+

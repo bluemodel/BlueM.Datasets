@@ -1,0 +1,74 @@
+*Allgemeine Angaben (*.ALL)
+*==========================
+
+ Bezeichnung.....................: OpenMI Test
+
+*Hauptueberschriften:
+*--------------------
+ ................................:
+ ................................:
+ ................................:
+
+*Simulations-Zeitraum:
+*---------------------             TT.MM.JJJJ hh:mm - TT.MM.JJJJ hh:mm
+ SimBeginn - SimEnde ............: 11/04/1994 07:30 - 18/04/1994 07:25
+
+*Zeitschritt:
+*------------
+ Zeitschrittlaenge [min] ........: 5
+ Zeitschritt Monat = M ..........:
+
+*Anfangsbedingungen:
+*-------------------
+ Muldenverluste [mm] ............: 1
+ Anfangsverlust [%] .............: 100
+ Gerinneabfluss [% von MQ] ......: 100
+ Anfangsbeckenfuellung [%] ......: 100
+ Anfangsbodenfeuchte [%] ........: 100
+
+*Simulationsoptionen:
+*-------------------
+ Kontrollfunktionen ...... [J/N] : J
+ Berechnung Zielfunktion   [J/N] : N
+
+*Berechnungsparameter:
+*--------------------
+ Exponent Abweichungen Sollwert .: 0
+ Fehlerabweichung am Pegel [%] ..: 0
+ Fehlerabweichung Zielfkt. [%] ..: 0
+
+*Ausgabeoptionen:
+*----------------
+ Ausgabe Maximalereignisse [J/N] : N
+ Bilanzausgabe ........... [J/N] : J
+ ... Wahrscheinlichkeiten  [J/N] : N
+ Ganglinienausgabe ....... [J/N] : J
+ ... CSV-Format .......... [J/N] : J
+ ... Binaerausgabe ....... [J/N] : N
+ Animation ............... [J/N] : N
+
+*DiffQuellen:
+*-------------
+ Berechnung ...............[0-4] : 0
+ Anzahl Stoffe ............[0-99]: 6
+*... Berechnung = Berechnungsmodus für diffuse Quellen
+*... 0 = keine Berücksichtiung
+*... 1 = Berücksichtigung
+*...
+*... Anzahl der Stoffe in der Datei *.DIF 
+*... Hier wird festgelegt, wieviele Spalten aus der *.DIF-Date
+*... eingelesen werden, unabhängig, wieviele darin tatsächlich
+*... definiert sind.
+ 
+*Erw. Ausgabeoptionen:
+*-------------
+ EFL-Wellenausgabe (LEFLWELOUT). : J
+ EFL-Bodenkennwerte (LEFLOUT)... : N
+ DIF-Testausgabe (LDIFOUT) ..... : N
+* LTSOUT: (Kontroll)Ausgabe der einzelnen Schritte der Simulation (Welche Schritt wurde abgearbeitet?/Welche Funktion(Routin) wurde aufgerfuen?) 
+ LTSTOUT ....................... : N
+ LBFFKT ........................ : N
+ LBFOUT ........................ : N
+
+*Beschreibung:
+*-------------

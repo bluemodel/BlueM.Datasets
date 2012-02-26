@@ -1,0 +1,11 @@
+Log-Datei für Verzeichnis:
+
+19.2.08:
+Datensatz 'testbek.all' für die Prüfung des Beckenobjektes mit Berechnungsoption 2 (manuelle Kennlinie mit nicht-linearem Speicher).
+Um den Vergleich mit SMUSI zu ermöglichen, habe ich einen Einzeleinleiter verwendet, der eine mit Hilfe von "Konvert" von asc- ins zre-Format umgewandelte Abflussganglinie einliest.
+
+
+
+
+
+
