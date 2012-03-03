@@ -43,7 +43,7 @@
  Bilanzausgabe ........... [J/N] : N
  ... Wahrscheinlichkeiten  [J/N] : N
  Ganglinienausgabe ....... [J/N] : J
- ... CSV-Format .......... [J/N] : N
+ ... CSV-Format .......... [J/N] : J
  ... Binaerausgabe ....... [J/N] : N
  Animation ............... [J/N] : N
 
