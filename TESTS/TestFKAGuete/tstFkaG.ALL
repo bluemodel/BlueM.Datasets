@@ -52,13 +52,5 @@
  Berechnung .................... : 1
  Anzahl Stoffe ..................: 9
  
-*Optimierung:
-*------------
- Optimierung ............. [J/N] : N
- Optimierungsstufe ....... [1-3] : 1
-*... 1=nur Funktion
-*... 2=nur Zeitabhängigkeit
-*... 3=Funktion + Zeitabhängigkeit
-
 *Beschreibung:
 *-------------
