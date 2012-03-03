@@ -4,7 +4,7 @@ Name;             Typ;             Einheit;   Datum;                            
 
 QzuDreck.zre;     Abfluss;         m3/s;      12.04.1994 20:00 - 12.04.1994 21:00;   1 min;               Zufluss für das Eulerbeispiel (1983) zum Nachweis der KalMil-Parameter;
 NDreck.zre;       Niederschlag;    mm;        12.04.1994 20:00 - 12.04.1994 21:00;   1 min;               derzeit keine Ahnung, wofür diese Zeitreihe verwendet wurde;
-5minGen.zre;      Niederschlag;    mm;        11.04.1994 07:30 - 18.04.1994 07:25;   5 min;               Ausschnitt aus der N-Zeitreihe Ober-Ramstadt;
+5minGen.zre;      Niederschlag;    mm;        11.04.1994 07:30 - 18.04.1994 07:25;   5 min;               Ausschnitt aus einer Niederschlagsmessung;
 QzuEin.zre;       Abfluss;         m3/s;      11.04.1994 19:00 - 18.04.1994 07:00;   5 min;               wird für als Einleitungsganglinie für Einzeleinleiter genutzt;
 RTC.zre;          Skalierung       -          11.04.1994 19:00 - 18.04.1994 07:00;   5 min;               Zeitreihe zum Testen der regelbasierten Steuerung;
 QEng1min;         Abfluss;         m3/s;      11.04.1994 12:00 - 11.04.1994 18:00;   1 min;               Mit Hilfe von HyoExpert generierter Zufluss aus Engelbeispiel für 50 l/sha in 1-Minuten-Auflösung;
