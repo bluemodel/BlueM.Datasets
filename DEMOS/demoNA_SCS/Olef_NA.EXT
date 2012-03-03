@@ -1,0 +1,15 @@
+*Zeitreihen (*.EXT)
+*==================
+*
+*|-----|------|-----|----------------------------------------------------------------------------------|
+*|Datei| Einh |Intrp| Name der Binärdatei                                                              |Bezeichnung
+*| Nr. |      |     |                                                                                  |
+*|-<->-|-<-->-|-<->-|-<--------1---------2---------3---------4---------5---------6---------7--------->-|
+ |  1  | mm/d |  2  | ZRE\00001025.zre                                                                 |Niederschlag Gebiet A
+ |  2  | mm/d |  2  | ZRE\00001028.bin                                                                 |Niederschlag Gebiet D
+ |  3  | mm/d |  2  | ZRE\00001027.bin                                                                 |Niederschlag Gebiet C
+ |  4  | mm/d |  2  | ZRE\00001026.bin                                                                 |Niederschlag Gebiet B
+ |  5  | mm/d |  2  | ZRE\00001029.bin                                                                 |Niederschlag Gebiet E
+ |  6  | mm/d |  1  | ZRE\00001035.zre                                                                 |Verdunstung
+ |  7  | °C   |  2  | ZRE\00001036.zre                                                                 |Temperatur
+*|-----|------|-----|----------------------------------------------------------------------------------|
