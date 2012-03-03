@@ -1,0 +1,65 @@
+*Allgemeine Angaben (*.ALL)
+*==========================
+
+ Bezeichnung.....................: Demo NA Modell Bodenfeuchte
+
+*Hauptueberschriften:
+*--------------------
+ ................................:
+ ................................:
+ ................................:
+
+*Simulations-Zeitraum:
+*---------------------             TT.MM.JJJJ hh:mm - TT.MM.JJJJ hh:mm
+ SimBeginn - SimEnde ............: 01.01.1990 00:00 - 05.01.1990 04:00
+
+*Zeitschritt:
+*------------
+ Zeitschrittlaenge [min] ........: 60
+ Zeitschritt Monat = M ..........:
+
+*Anfangsbedingungen:
+*-------------------
+ Muldenverluste [mm] ............: 4
+ Anfangsverlust [%] .............: 100
+ Gerinneabfluss [% von MQ] ......: 100
+ Anfangsbeckenfuellung [%] ......: 100
+ Anfangsbodenfeuchte [%] ........: 100
+
+*Simulationsoptionen:
+*-------------------
+ Kontrollfunktionen ...... [J/N] : J
+
+*Berechnungsparameter:
+*--------------------
+ Exponent Abweichungen Sollwert .: 0
+ Fehlerabweichung am Pegel [%] ..: 0
+ Fehlerabweichung Zielfkt. [%] ..: 0
+
+*Ausgabeoptionen:
+*----------------
+ Ausgabe Maximalereignisse [J/N] : J
+ Bilanzausgabe ........... [J/N] : J
+ ... Wahrscheinlichkeiten  [J/N] : N
+ Ganglinienausgabe ....... [J/N] : J
+ ... CSV-Format .......... [J/N] : J
+ ... Binaerausgabe ....... [J/N] : N
+ Animation ............... [J/N] : N
+
+ *DiffQuellen:
+*-------------
+ Berechnung ...............[0-4] : 1
+ Anzahl Stoffe ............[0-99]: 6
+ 
+*Erw. Ausgabeoptionen:
+*-------------
+ EFL-Wellenausgabe (LEFLWELOUT). : N
+ EFL-Bodenkennwerte (LEFLOUT)... : N
+ DIF-Testausgabe (LDIFOUT) ..... : N
+ Protokollausgabe (LLOGOUT) .... : J
+ LTSTOUT ....................... : N
+ LBFFKT ........................ : N
+ LBFOUT ........................ : N
+ 
+*Beschreibung:
+*-------------

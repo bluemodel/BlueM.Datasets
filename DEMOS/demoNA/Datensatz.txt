@@ -1,0 +1,3 @@
+Datensatzbeschreibung:
+----------------------
+Demo NA-Modell (Bodenfeuchte) für BlueM.Sim basierend auf TALSIM Demo-Datensatz.

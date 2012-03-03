@@ -1,0 +1,14 @@
+*Systemlogik (*.SYS)
+*===================
+*
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
+*|       S  y  s  t  e  m        |    Zulauf      |      Ablauf    |WEL|BIL|   X   |   Y   |O|S|
+*|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |       |       | | |
+*|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|<----->|<----->|+|+|
+ | Einzeleinleiter        | E100 |                | T100           | J |   | 2500.0| 1500.0|1|0|Einzeleinleiter
+ | Beispiel Speicher      | T100 | E100           | U100 S100      | J | J | 2500.0| 2500.0|1|0|Beispiel Speicher
+ | Verbraucher            | U100 | T100           | SEND           | J | J | 2000.0| 4000.0|1|0|Verbraucher
+ | Transportstrecke       | S100 | T100           | SEND           |   |   | 3000.0| 4000.0|1|0|Transportstrecke
+ | Transportstrecke Absch | SEND | S100 U100      | ZPG            |   |   | 2500.0| 5000.0|1|0|Transportstrecke Abschluss
+ | ZIELPEGEL              | ZPG  | SEND           |                |   |   | 2500.0| 6000.0|1|0|ZIELPEGEL
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
