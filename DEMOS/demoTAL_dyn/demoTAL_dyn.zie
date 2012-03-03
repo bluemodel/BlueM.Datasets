@@ -1,0 +1,43 @@
+*Optimierungsziele
+*=================
+*
+*Series
+*------
+*
+*|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|-------------------------------|----------|
+*| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei | SimGröße   | ZielFkt | EvalZeitraum |         Referenzreihe         | IstWert  |
+*|     |               |         |   |       |       |            |         | Start | Ende | RefGröße | Datei              |          |
+*|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|----------|--------------------|----------|
+*|  S  | StauzielDiff  |         |   |       |  WEL  | TOLF_VOL   | AbQuad  |       |      | HWSR     | ZRE\HWSR.wel       |          |
+ |  P  | Stauzielüber  |         |   |       |  WEL  | TOLF_VOL   | sÜber   |       |      | HWSR     | ZRE\HWSR.wel       |   318615 |
+ |  P  | Stauzielunter |         |   |       |  WEL  | TOLF_VOL   | sUnter  |       |      | HWSR     | ZRE\HWSR.wel       | 24600936 |
+*|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|----------|--------------------|----------|
+*
+*ValueFromSeries
+*---------------
+*
+*|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|-------------------|----------|
+*| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei |   SimGröße | ZielFkt | EvalZeitraum |   Referenzwert    | IstWert  |
+*|     |               |         |   |       |       |            |         | Start | Ende | WertTyp | RefWert |          |
+*|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|----------|
+*|  P  | Überlauf      |         |   |       |  WEL  | TOLF_QH2   | Diff    |       |      | MaxWert |    0    |    3.976 |
+*|  S  | WVersorgung   |         | + |       |  KWL  | KGRP_Y36   | Diff    |       |      | Average |    0    | -0.10757 |
+ |  P  | Wasserkraft   |         | + |       |  KWL  | KGRP_Y35   | Diff    |       |      | Average |    0    |   -49.93 |
+*|  P  | MaxQab        |         |   |       |  WEL  | S09 _1ZU   | Diff    |       |      | MaxWert |    0    |    8.976 |
+*|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|----------|
+*
+*IHA-Analysis
+*------------
+*
+*|-----|---------------|---------|---|-------|-------|------------|-----------|-------------------------------|----------|
+*| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei |   SimGröße | ZielFkt   |         Referenzreihe         | IstWert  |
+*|     |               |         |   |       |       |            |           | RefGröße | Datei              |          |
+*|-----|---------------|---------|---|-------|-------|------------|-----------|----------|--------------------|----------|
+ |  P  | IHAGesamt     |         |   |       | WEL   | S09 _1ZU   |           | TOLF_1ZU | ZRE\Statisch.wel   |0.68920379|
+*|  S  | IHAQuantity   |         |   |       | WEL   | S09 _1ZU   | Quantity  | TOLF_1ZU | ZRE\Statisch.wel   |0.67824848|
+*|  S  | IHAExtremes   |         |   |       | WEL   | S09 _1ZU   | Extremes  | TOLF_1ZU | ZRE\Statisch.wel   |0.68805550|
+*|  S  | IHATiming     |         |   |       | WEL   | S09 _1ZU   | Timing    | TOLF_1ZU | ZRE\Statisch.wel   |0.58925915|
+*|  S  | IHAFrequency  |         |   |       | WEL   | S09 _1ZU   | Frequency | TOLF_1ZU | ZRE\Statisch.wel   |0.59900244|
+*|  S  | IHARate       |         |   |       | WEL   | S09 _1ZU   | Rate      | TOLF_1ZU | ZRE\Statisch.wel   |0.89145337|
+*|-----|---------------|---------|---|-------|-------|------------|-----------|----------|--------------------|----------|
+*
