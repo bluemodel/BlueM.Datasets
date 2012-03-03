@@ -1,0 +1,16 @@
+Datensatzbeschreibung:
+----------------------
+
+NA-Modell (Abflussbeiwert) für ein Einzugsgebiet - Langzeitsimulation
+
+Autokalibrierung:
+-----------------
+
+Optimierungsziele:
+- Summe der Fehlerquadrate
+- Volumenfehler
+
+Optimierungsparameter:
+- Basisabfluss
+- PSI (Abflussbeiwert)
+- Retentionskonstanten
