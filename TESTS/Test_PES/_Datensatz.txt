@@ -1,0 +1,4 @@
+Datensatz für BlueM.Sim zwecks Optimierung mit BlueM.Opt
+Volumen der Talsperren T100, T200, T301 wird optimiert.
+Läuft schön.
+Das Volumen wäre nett als Gegenkraft.
