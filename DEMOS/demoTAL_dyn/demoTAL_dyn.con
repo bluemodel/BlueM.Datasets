@@ -1,0 +1,10 @@
+*Constraints
+*===========
+*
+*|---------------|----------|-------|-----------|-------------|----------------------|---------------------------------|
+*|               |          |       |           |             |      Grenzwert       |        Grenzreihe               |
+*| Bezeichnung   | GrenzTyp | Datei | SimGröße  | Oben/Unten  | WertTyp  | Grenzwert | Grenzgröße | Datei              |
+*|---------------|----------|-------|-----------|-------------|----------|-----------|------------|--------------------|
+ | Leerlauf      | Reihe    |  WEL  | TOLF_VOL  | Untergrenze |          |           | Absenkziel | ZRE\Absenkziel.wel |
+*| HWSRaum       | Reihe    |  WEL  | TOLF_VOL  | Obergrenze  |          |           | HWSR       | ZRE\HWSR.wel       |
+*|---------------|----------|-------|-----------|-------------|----------|-----------|------------|--------------------|

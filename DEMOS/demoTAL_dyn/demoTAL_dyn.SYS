@@ -1,0 +1,18 @@
+*Systemlogik (*.SYS)
+*===================
+*
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
+*|       S  y  s  t  e  m        |    Zulauf      |      Ablauf    |WEL|BIL|   X   |   Y   |O|S|
+*|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |       |       | | |
+*|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|<----->|<----->|+|+|
+ | Zufluss Talsperre      | E10  |                | S01            |   |   |       |       |0|0|
+ | Gerinne 1              | S01  | E10            | TOLF           |   |   |       |       |0|0|
+ | Talsperre              | TOLF | S01            | S09  U10  U11  | J | J |       |       |0|0|
+ | Gerinne Unterlauf      | S09  | TOLF           | S10            | J | J |       |       |0|0|
+ | Verbraucher Gewerbe    | U10  | TOLF           | S10            |   |   |       |       |0|0|
+ | Verbraucher Wasserwerk | U11  | TOLF           | SEND           |   |   |       |       |0|0|
+ | Gerinne 10             | S10  | S09  U10       | S11            |   |   |       |       |0|0|
+ | Gerinne 11             | S11  | S10            | SEND           |   |   |       |       |0|0|
+ | Systemabschluss        | SEND | S11  U11       | ZPG            |   |   |       |       |0|0|
+ | ZIELPEGEL              | ZPG  | SEND           |                |   |   |       |       |0|0|
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
