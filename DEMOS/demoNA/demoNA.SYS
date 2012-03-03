@@ -1,0 +1,118 @@
+*Systemlogik (*.SYS)
+*===================
+*
+*|-------------------------------|----------------|----------------|---|---|
+*|       S  y  s  t  e  m        |    Zulauf      |      Ablauf    |WEL|BIL|
+*|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |
+*|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|
+ | TG OBEREEMMER          | A001 |                | S100           | J | J |TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S100 | A001           | S102           | J |   |GE von TG OBEREEMMER
+ | TG OBEREEMMER          | A002 |                | S102           | J |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A003 |                | S102           |   |   |TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S102 | A002 A003 S100 | S103           | J |   |GE von TG OBEREEMMER
+ | TG OBEREEMMER          | A004 |                | S103           |   |   |TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S103 | A004 S102      | S106           | J |   |GE von TG OBEREEMMER
+ | TG OBEREEMMER          | A005 |                | S106           | J |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A007 |                | S207           | J |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A006 |                | S105           |   |   |TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S105 | A006           | S207           |   |   |GE von TG OBEREEMMER
+ | FT für TG OBEREEMMER   | S207 | A007 S105      | S106           | J |   |FT für TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S106 | A005 S103 S207 | S114           | J |   |GE von TG OBEREEMMER
+ | TG OBEREEMMER          | A008 |                | S114           |   |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A015 |                | S215           |   |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A011 |                | S113           |   |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A009 |                | S109           |   |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A010 |                | S109           |   |   |TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S109 | A009 A010      | S113           |   |   |GE von TG OBEREEMMER
+ | TG OBEREEMMER          | A014 |                | S214           |   |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A013 |                | S112           |   |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A012 |                | S111           |   |   |TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S111 | A012           | S112           |   |   |GE von TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S112 | A013 S111      | S214           |   |   |GE von TG OBEREEMMER
+ | FT für TG OBEREEMMER   | S214 | A014 S112      | S113           |   |   |FT für TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S113 | A011 S109 S214 | S215           |   |   |GE von TG OBEREEMMER
+ | FT für TG OBEREEMMER   | S215 | A015 S113      | S114           | J |   |FT für TG OBEREEMMER
+ | GE von TG OBEREEMMER   | S114 | A008 S106 S215 | SQZU           | J |   |GE von TG OBEREEMMER
+ | TG OBEREEMMER          | A016 |                | SQZU           |   |   |TG OBEREEMMER
+ | TG OBEREEMMER          | A017 |                | SQZU           |   |   |TG OBEREEMMER
+ | Oberlauf HRB           | SQZU | A016 A017 S114 | THRB           | J |   |Oberlauf HRB
+ | Hochwasserrückhaltebec | THRB | SQZU           | SHRB           | J | J |Hochwasserrückhaltebecken
+ | TG EMMERSTH            | A031 |                | SHRB           |   |   |TG EMMERSTH
+ | TG OBEREEMMER          | A018 |                | SQS            |   |   |TG OBEREEMMER
+ | TG HEUBACH             | A030 |                | SQS            |   |   |TG HEUBACH
+ | TG HEUBACH             | A027 |                | S128           |   |   |TG HEUBACH
+ | TG HEUBACH             | A026 |                | S125           |   |   |TG HEUBACH
+ | TG HEUBACH             | A022 |                | S124           |   |   |TG HEUBACH
+ | TG HEUBACH             | A020 |                | S120           |   |   |TG HEUBACH
+ | TG HEUBACH             | A021 |                | S120           |   |   |TG HEUBACH
+ | TG HEUBACH             | A019 |                | S118           |   |   |TG HEUBACH
+ | GE von TG HEUBACH      | S118 | A019           | S120           |   |   |GE von TG HEUBACH
+ | GE von TG HEUBACH      | S120 | A020 A021 S118 | S124           |   |   |GE von TG HEUBACH
+ | TG HEUBACH             | A025 |                | S225           |   |   |TG HEUBACH
+ | TG HEUBACH             | A024 |                | S123           |   |   |TG HEUBACH
+ | TG HEUBACH             | A023 |                | S122           |   |   |TG HEUBACH
+ | GE von TG HEUBACH      | S122 | A023           | S123           |   |   |GE von TG HEUBACH
+ | GE von TG HEUBACH      | S123 | A024 S122      | S225           |   |   |GE von TG HEUBACH
+ | FT für TG HEUBACH      | S225 | A025 S123      | S124           |   |   |FT für TG HEUBACH
+ | GE von TG HEUBACH      | S124 | A022 S120 S225 | S125           |   |   |GE von TG HEUBACH
+ | GE von TG HEUBACH      | S125 | A026 S124      | S128           |   |   |GE von TG HEUBACH
+ | TG HEUBACH             | A029 |                | S229           |   |   |TG HEUBACH
+ | TG HEUBACH             | A028 |                | S127           |   |   |TG HEUBACH
+ | GE von TG HEUBACH      | S127 | A028           | S229           |   |   |GE von TG HEUBACH
+ | FT für TG HEUBACH      | S229 | A029 S127      | S128           |   |   |FT für TG HEUBACH
+ | GE von TG HEUBACH      | S128 | A027 S125 S229 | SQS            |   |   |GE von TG HEUBACH
+ | seitlicher Zufluss     | SQS  | A018 A030 S128 | SHRB           | J |   |seitlicher Zufluss
+ | Unterlauf HRB          | SHRB | A031 SQS  THRB | S131           | J |   |Unterlauf HRB
+ | TG EMMERSTH            | A032 |                | S131           |   |   |TG EMMERSTH
+ | GE von TG EMMERSTH     | S131 | A032 SHRB      | S137           |   |   |GE von TG EMMERSTH
+ | TG EMMERSTH            | A035 |                | S235           |   |   |TG EMMERSTH
+ | TG EMMERSTH            | A034 |                | S133           |   |   |TG EMMERSTH
+ | GE von TG EMMERSTH     | S133 | A034           | S235           |   |   |GE von TG EMMERSTH
+ | FT für TG EMMERSTH     | S235 | A035 S133      | S137           |   |   |FT für TG EMMERSTH
+ | TG EMMERSTH            | A033 |                | S238           |   |   |TG EMMERSTH
+ | TG EMMERSTH            | A038 |                | S238           |   |   |TG EMMERSTH
+ | TG EMMERSTH            | A037 |                | S136           |   |   |TG EMMERSTH
+ | TG EMMERSTH            | A036 |                | S135           |   |   |TG EMMERSTH
+ | GE von TG EMMERSTH     | S135 | A036           | S136           |   |   |GE von TG EMMERSTH
+ | GE von TG EMMERSTH     | S136 | A037 S135      | S238           |   |   |GE von TG EMMERSTH
+ | FT für TG EMMERSTH     | S238 | A033 A038 S136 | S137           |   |   |FT für TG EMMERSTH
+ | GE von TG EMMERSTH     | S137 | S131 S235 S238 | S152           |   |   |GE von TG EMMERSTH
+ | TG EMMERSTH            | A039 |                | S152           |   |   |TG EMMERSTH
+ | TG DIESTEL             | A053 |                | S253           |   |   |TG DIESTEL
+ | TG DIESTEL             | A047 |                | S151           |   |   |TG DIESTEL
+ | TG DIESTEL             | A046 |                | S145           |   |   |TG DIESTEL
+ | TG DIESTEL             | A041 |                | S141           |   |   |TG DIESTEL
+ | TG DIESTEL             | A042 |                | S141           |   |   |TG DIESTEL
+ | TG DIESTEL             | A040 |                | S139           |   |   |TG DIESTEL
+ | GE von TG DIESTEL      | S139 | A040           | S141           |   |   |GE von TG DIESTEL
+ | GE von TG DIESTEL      | S141 | A041 A042 S139 | S145           |   |   |GE von TG DIESTEL
+ | TG DIESTEL             | A043 |                | S245           |   |   |TG DIESTEL
+ | TG DIESTEL             | A045 |                | S245           |   |   |TG DIESTEL
+ | TG DIESTEL             | A044 |                | S143           |   |   |TG DIESTEL
+ | GE von TG DIESTEL      | S143 | A044           | S245           |   |   |GE von TG DIESTEL
+ | FT für TG DIESTEL      | S245 | A043 A045 S143 | S145           |   |   |FT für TG DIESTEL
+ | GE von TG DIESTEL      | S145 | A046 S141 S245 | S151           |   |   |GE von TG DIESTEL
+ | TG DIESTEL             | A052 |                | S252           |   |   |TG DIESTEL
+ | TG DIESTEL             | A050 |                | S150           |   |   |TG DIESTEL
+ | TG DIESTEL             | A051 |                | S150           |   |   |TG DIESTEL
+ | TG DIESTEL             | A048 |                | S148           |   |   |TG DIESTEL
+ | TG DIESTEL             | A049 |                | S148           |   |   |TG DIESTEL
+ | GE von TG DIESTEL      | S148 | A048 A049      | S150           |   |   |GE von TG DIESTEL
+ | GE von TG DIESTEL      | S150 | A050 A051 S148 | S252           |   |   |GE von TG DIESTEL
+ | FT für TG DIESTEL      | S252 | A052 S150      | S151           |   |   |FT für TG DIESTEL
+ | GE von TG DIESTEL      | S151 | A047 S145 S252 | S253           |   |   |GE von TG DIESTEL
+ | FT für TG DIESTEL      | S253 | A053 S151      | S152           |   |   |FT für TG DIESTEL
+ | GE von TG EMMERPY      | S152 | A039 S137 S253 | S164           | J |   |GE von TG EMMERPY
+ | TG EMMERPY             | A054 |                | S164           |   |   |TG EMMERPY
+ | GE von TG EMMERPY      | S164 | A054 S152      | S99            |   |   |GE von TG EMMERPY
+ | TG EMMERPY             | A065 |                | S99            |   |   |TG EMMERPY
+ | Sammler / Gerinne      | S99  | A065 S164      | S167           |   |   |Sammler / Gerinne
+ | TG EMMERPY             | A064 |                | S167           |   |   |TG EMMERPY
+ | TG EMMERPY             | A066 |                | S167           |   |   |TG EMMERPY
+ | GE von TG EMMERPY      | S167 | A064 A066 S99  | T170           |   |   |GE von TG EMMERPY
+ | TG EMMERPY             | A067 |                | T170           |   |   |TG EMMERPY
+ | TG EMMERPY             | A068 |                | T170           |   |   |TG EMMERPY
+ | EMTALSPER              | T170 | A067 A068 S167 | S171           | J |   |EMTALSPER
+ | GE von TG EMMERPY      | S171 | T170           | ZPG            |   |   |GE von TG EMMERPY
+ | Zielpegel              | ZPG  | S171           |                |   |   |Zielpegel
+*|-------------------------------|----------------|----------------|---|---|
