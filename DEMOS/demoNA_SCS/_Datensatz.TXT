@@ -1,0 +1,18 @@
+Datensatzbeschreibung:
+----------------------
+
+NA-Modell (SCS-Verfahren) für ein Einzugsgebiet - Langzeitsimulation
+
+Autokalibrierung:
+-----------------
+
+Optimierungsziele:
+- Summe der Fehlerquadrate
+- Volumenfehler
+- Abweichung der Abflussspitze (sekundäres Ziel)
+
+Optimierungsparameter:
+- Basisabfluss
+- CN-Werte (SCS-Verfahren)
+- Retentionskonstanten
+- Aufteilungsfaktor Beta
