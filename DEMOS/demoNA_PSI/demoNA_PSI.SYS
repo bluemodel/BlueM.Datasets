@@ -1,0 +1,18 @@
+*Systemlogik (*.SYS)
+*===================
+*
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
+*|       S  y  s  t  e  m        |    Zulauf      |      Ablauf    |WEL|BIL|   X   |   Y   |O|S|
+*|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |       |       | | |
+*|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|<----->|<----->|+|+|
+ | natürl. Fläche         | AA   |                | S3             | J |   | 9500.0| 5500.0|2|0|natürl. Fläche
+ | natürl. Fläche         | AE   |                | S2             | J |   | 8000.0| 5500.0|2|0|natürl. Fläche
+ | natürl. Fläche         | AB   |                | S1             | J |   | 6000.0| 6000.0|2|0|natürl. Fläche
+ | natürl. Fläche         | AC   |                | S1             | J |   | 6000.0| 7000.0|2|0|natürl. Fläche
+ | natürl. Fläche         | AD   |                | S0             | J |   | 6500.0| 8500.0|4|0|natürl. Fläche
+ | Sammler / Gerinne      | S0   | AD             | S1             | J |   | 6500.0| 7500.0|4|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S1   | AB   AC   S0   | S2             | J |   | 7500.0| 6500.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S2   | AE   S1        | S3             | J |   | 9000.0| 6500.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S3   | AA   S2        | ZPG            | J |   |10500.0| 6500.0|2|0|Sammler / Gerinne
+ | ZIELPEGEL              | ZPG  | S3             |                | J |   |11500.0| 6500.0|2|0|ZIELPEGEL
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|

@@ -1,0 +1,61 @@
+*Allgemeine Angaben (*.ALL)
+*==========================
+
+ Bezeichnung.....................: Olef
+
+*Hauptueberschriften:
+*--------------------
+ ................................:
+ ................................:
+ ................................:
+
+*Simulations-Zeitraum:
+*---------------------             TT.MM.JJJJ hh:mm - TT.MM.JJJJ hh:mm
+ SimBeginn - SimEnde ............: 02.01.1959 00:00 - 31.12.1973 00:00
+
+*Zeitschritt:
+*------------
+ Zeitschrittlaenge [min] ........: 1440
+ Zeitschritt Monat = M ..........:
+
+*Anfangsbedingungen:
+*-------------------
+ Muldenverluste [mm] ............: 1
+ Anfangsverlust [%] .............: 100
+ Gerinneabfluss [% von MQ] ......: 100
+ Anfangsbeckenfuellung [%] ......: 100
+ Anfangsbodenfeuchte [%] ........: 100
+
+*Simulationsoptionen:
+*-------------------
+ Kontrollfunktionen ...... [J/N] : N
+ Berechnung Zielfunktion   [J/N] : N
+
+*Berechnungsparameter:
+*--------------------
+ Exponent Abweichungen Sollwert .: 0
+ Fehlerabweichung am Pegel [%] ..: 0
+ Fehlerabweichung Zielfkt. [%] ..: 0
+
+*Ausgabeoptionen:
+*----------------
+ Ausgabe Maximalereignisse [J/N] : N
+ Bilanzausgabe ........... [J/N] : N
+ ... Wahrscheinlichkeiten  [J/N] : N
+ Ganglinienausgabe ....... [J/N] : J
+ ... CSV-Format .......... [J/N] : J
+ ... Binaerausgabe ....... [J/N] : N
+ Animation ............... [J/N] : N
+ 
+ *Erw. Ausgabeoptionen:
+*-------------
+ EFL-Wellenausgabe (LEFLWELOUT). : N
+ EFL-Bodenkennwerte (LEFLOUT)... : N
+ DIF-Testausgabe (LDIFOUT) ..... : N
+ Protokollausgabe (LLOGOUT) .... : J
+ LTSTOUT ....................... : N
+ LBFFKT ........................ : N
+ LBFOUT ........................ : N
+
+*Beschreibung:
+*-------------
