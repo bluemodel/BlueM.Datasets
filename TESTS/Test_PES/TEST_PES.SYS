@@ -1,0 +1,41 @@
+*Systemlogik (*.SYS)
+*===================
+*
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
+*|       S  y  s  t  e  m        |    Zulauf      |      Ablauf    |WEL|BIL|   X   |   Y   |O|S|
+*|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |       |       | | |
+*|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|<----->|<----->|+|+|
+ | Einzeleinleiter        | E100 |                | V100           | J |   | 1000.0| 5000.0|2|0|Einzeleinleiter
+ | Einzeleinleiter        | E200 |                | V200           | J |   | 8500.0| 4000.0|1|0|Einzeleinleiter
+ | Verzweigung            | V100 | E100           | T100 V101      | J |   | 2000.0| 5000.0|2|0|Verzweigung
+ | Beispiel Speicher      | T100 | V100           | S001           | J |   | 3500.0| 4000.0|2|0|Beispiel Speicher
+ | Verzweigung            | V101 | V100           | S100 S101      | J |   | 3500.0| 5500.0|2|0|Verzweigung
+ | Sammler / Gerinne      | S100 | V101           | S001           | J |   | 5000.0| 5000.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S101 | V101           | S001           | J |   | 5000.0| 6500.0|2|0|Sammler / Gerinne
+ | Transportstrecke       | S001 | S100 S101 T100 | V200           | J |   | 7500.0| 5000.0|2|0|Transportstrecke
+ | Verzweigung            | V200 | E200 S001      | V201 V202      | J |   | 9000.0| 5000.0|2|0|Verzweigung
+ | Verzweigung            | V201 | V200           | T200 S200      | J |   |10500.0| 4000.0|2|0|Verzweigung
+ | Speicher / Talsperre   | T200 | V201           | S002           | J |   |12500.0| 3000.0|2|0|Speicher / Talsperre
+ | Verzweigung            | V202 | V200           | S201 V220      | J |   |10000.0| 7500.0|2|0|Verzweigung
+ | Sammler / Gerinne      | S201 | V202           | S202           | J |   |11500.0| 6500.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S202 | S201           | S203           | J |   |12500.0| 6500.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S203 | S202           | S005           | J |   |13500.0| 6500.0|2|0|Sammler / Gerinne
+ | Verzweigung            | V220 | V202           | S220 S221      | J |   |11500.0| 8500.0|2|0|Verzweigung
+ | Sammler / Gerinne      | S220 | V220           | S005           | J |   |12500.0| 8000.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S221 | V220           | S005           | J |   |12500.0| 9000.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S005 | S203 S220 S221 | S002           | J |   |15000.0| 7500.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S200 | V201           | S002           | J |   |12500.0| 5000.0|2|0|Sammler / Gerinne
+ | Sammler / Gerinne      | S002 | S005 S200 T200 | V300           | J |   |16500.0| 5000.0|2|0|Sammler / Gerinne
+ | Einzeleinleiter        | E300 |                | V300           | J |   |16500.0| 3500.0|1|0|Einzeleinleiter
+ | Verzweigung            | V300 | E300 S002      | V301 T301      | J |   |17500.0| 5000.0|2|0|Verzweigung
+ | Verzweigung            | V301 | V300           | V302 S300      | J |   |18500.0| 3500.0|2|0|Verzweigung
+ | Sammler / Gerinne      | S300 | V301           | S004           | J |   |21000.0| 5000.0|2|0|Sammler / Gerinne
+ | Verzweigung            | V302 | V301           | S301 T300      | J |   |19500.0| 2500.0|2|0|Verzweigung
+ | Sammler / Gerinne      | S301 | V302           | S003           | J |   |21000.0| 2000.0|2|0|Sammler / Gerinne
+ | Speicher / Talsperre   | T300 | V302           | S003           | J |   |21000.0| 3000.0|2|0|Speicher / Talsperre
+ | Sammler / Gerinne      | S003 | S301 T300      | S004           | J |   |23000.0| 2500.0|2|0|Sammler / Gerinne
+ | Speicher / Talsperre   | T301 | V300           | S004           | J |   |21000.0| 7500.0|2|0|Speicher / Talsperre
+ | Sammler / Gerinne      | S004 | S003 S300 T301 | SEND           | J |   |24500.0| 5000.0|2|0|Sammler / Gerinne
+ | Transportstrecke Absch | SEND | S004           | ZPG            | J |   |26500.0| 5000.0|2|0|Transportstrecke Abschluss
+ | ZIELPEGEL              | ZPG  | SEND           |                | J |   |27500.0| 5000.0|2|0|ZIELPEGEL
+*|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|
