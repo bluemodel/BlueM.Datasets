@@ -1,0 +1,261 @@
+[TITLE]
+Beispiel ATV-A 128
+TU Darmstadt
+ihwb
+
+[OPTIONS]
+FLOW_UNITS           LPS
+INFILTRATION         CURVE_NUMBER
+FLOW_ROUTING         DYNWAVE
+START_DATE           06/10/2001
+START_TIME           12:00:00
+REPORT_START_DATE    06/10/2001
+REPORT_START_TIME    12:00:00
+END_DATE             06/17/2001
+END_TIME             00:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             0
+REPORT_STEP          00:01:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:01 
+ALLOW_PONDING        YES
+INERTIAL_DAMPING     PARTIAL
+VARIABLE_STEP        0.75
+LENGTHENING_STEP     0
+MIN_SURFAREA         0
+NORMAL_FLOW_LIMITED  SLOPE
+SKIP_STEADY_STATE    NO
+FORCE_MAIN_EQUATION  H-W
+LINK_OFFSETS         DEPTH
+MIN_SLOPE            0
+
+[FILES]
+USE INFLOWS "d:\data\develop\devtest\swmm\A128_rbc\Qzu_A128.txt"
+USE HOTSTART "d:\data\develop\devtest\swmm\A128_rbc\A128_1200.hsf"
+
+[EVAPORATION]
+;;Type       Parameters
+;;---------- ----------
+CONSTANT     0.0
+
+[JUNCTIONS]
+;;               Invert     Max.       Init.      Surcharge  Ponded    
+;;Name           Elev.      Depth      Depth      Depth      Area      
+;;-------------- ---------- ---------- ---------- ---------- ----------
+S102             110.01     4          .00        0          100       
+S601             106.01     4          .00        0          100       
+S203             106.49     4          .00        0          100       
+RUE2             106.21     4          .00        0          100       
+S101             110.61     4          .00        0          100       
+RUE1             107.09     4          .00        0          100       
+S201             107.59     4          .00        0          100       
+S602             102.14     4          .00        0          100       
+S202             107.09     4          .00        0          100       
+RUE1Ra           107.09     4          .00        0          100       
+DBKu             99         8          .00        0          100       
+RRBRa            109.01     6          .00        0          100       
+S301             106.21     4          .00        0          100       
+RUE2Ra           106.21     4          .00        0          100       
+S401             106.96     4          .00        0          100       
+FBRa             105.61     5          .00        0          100       
+S402             106.61     4          .00        0          100       
+S701             100.4      4          .00        0          100       
+DBBu             99         7          .00        0          100       
+DBAus            98.9       4          .00        0          100       
+
+[OUTFALLS]
+;;               Invert     Outfall    Stage/Table      Tide
+;;Name           Elev.      Type       Time Series      Gate
+;;-------------- ---------- ---------- ---------------- ----
+RRBAus           108.51     FREE                        NO
+RUE1Ra1          106.09     FREE                        NO
+RUE2Ra1          105.21     FREE                        NO
+KLA              100        FREE                        NO
+FBRa1            104.61     FREE                        NO
+DBAus2           98.5       FREE                        NO
+
+[STORAGE]
+;;               Invert   Max.     Init.    Shape      Shape                      Ponded   Evap.   
+;;Name           Elev.    Depth    Depth    Curve      Params                     Area     Frac.   
+;;-------------- -------- -------- -------- ---------- -------- -------- -------- -------- --------
+RRB              107.51   6.5      .00      TABULAR    SKRRB                      0        0       
+FB               104.11   7        .00      TABULAR    SKFB                       0        0       
+DB               95.4     9        .00      TABULAR    SKDB                       0        0       
+
+[CONDUITS]
+;;               Inlet            Outlet                      Manning    Inlet      Outlet     Init.      Max.      
+;;Name           Node             Node             Length     N          Offset     Offset     Flow       Flow      
+;;-------------- ---------------- ---------------- ---------- ---------- ---------- ---------- ---------- ----------
+S101             S101             RRB              120.00     0.013      0.00       2.5        0.1        0.0       
+S102             S102             S601             500.00     0.013      0.00       0.00       0.1        0.0       
+S301             S301             S601             10.00      0.013      0.00       0.00       0.1        0.0       
+S203             S203             RUE2             40.00      0.013      0.00       0.00       0.1        0.0       
+S202             S202             S203             100.00     0.013      0.00       0.00       0.1        0.0       
+S201             S201             RUE1             100.00     0.013      0.00       0.00       0.1        0.0       
+S601             S601             S602             1290.0     0.013      0.00       0.00       0.1        0.0       
+RUE1             RUE1             S202             5.00       0.013      0.00       0.00       0.1        50.0      
+DBKu             DBKu             DBAus            10.00      0.013      0.00       0.00       0.1        0.0       
+RRBRa            RRBRa            RRBAus           50.00      0.013      0.00       0.00       0.1        0.0       
+RUE1Ra           RUE1Ra           RUE1Ra1          100.00     0.013      0.00       0.00       0.1        0.0       
+RUE2             RUE2             S301             5.00       0.013      0.00       0.00       0.1        100.0     
+RUE2Ra           RUE2Ra           RUE2Ra1          100.00     0.013      0.00       0.00       0.1        0.0       
+S402             S402             S601             20.00      0.013      0.00       0.00       0.1        0.0       
+S401             S401             FB               50.00      0.013      0.00       2.5        0.1        0.0       
+FBRa             FBRa             FBRa1            100.00     0.013      0.00       0.00       0.1        0.0       
+S602             S602             DB               580.00     0.013      0.00       5.00       0.1        0.0       
+S701             S701             KLA              100.00     0.013      0.00       0.00       0.1        0.0       
+DBAus            DBAus            DBAus2           50.00      0.013      0.00       0.00       0.1        0.0       
+DBBu             DBBu             DBAus            10.00      0.013      0.00       0.00       0.1        0.0       
+
+[PUMPS]
+;;               Inlet            Outlet           Pump             Init.  Startup  Shutoff 
+;;Name           Node             Node             Curve            Status Depth    Depth   
+;;-------------- ---------------- ---------------- ---------------- ------ -------- --------
+RRB              RRB              S102             PKRRB            ON     0        0       
+FB               FB               S402             PKFB             ON     0        0       
+DB               DB               S701             PKDB             ON     0        0       
+
+[WEIRS]
+;;               Inlet            Outlet           Weir         Crest      Disch.     Flap End      End       
+;;Name           Node             Node             Type         Height     Coeff.     Gate Con.     Coeff.    
+;;-------------- ---------------- ---------------- ------------ ---------- ---------- ---- -------- ----------
+WE_RUE1          RUE1             RUE1Ra           SIDEFLOW     0.5        1.475      NO   0        0         
+WE_RUE2          RUE2             RUE2Ra           SIDEFLOW     0.5        1.475      NO   0        0         
+WE_FB            FB               FBRa             SIDEFLOW     2.0        1.475      NO   0        0         
+KU_DB            DB               DBKu             SIDEFLOW     4.0        1.475      NO   0        0         
+BU_DB            DB               DBBu             SIDEFLOW     4.3        1.475      NO   0        0         
+BU_RRB           RRB              RRBRa            SIDEFLOW     2.5        1.475      NO   0        0         
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels   
+;;-------------- ------------ ---------------- ---------- ---------- ---------- ----------
+S101             CIRCULAR     1                0          0.0        0.0        1                    
+S102             CIRCULAR     0.4              0          0.0        0.0        1                    
+S301             CIRCULAR     0.3              0          0.0        0.0        1                    
+S203             CIRCULAR     0.5              0          0.0        0.0        1                    
+S202             CIRCULAR     0.3              0          0.0        0.0        1                    
+S201             CIRCULAR     0.5              0          0.0        0.0        1                    
+S601             CIRCULAR     0.8              0          0.0        0.0        1                    
+RUE1             RECT_CLOSED  3                2          0.0        0.0        1                    
+DBKu             CIRCULAR     0.5              0          0.0        0.0        1                    
+RRBRa            CIRCULAR     1                0          0.0        0.0        1                    
+RUE1Ra           CIRCULAR     0.5              0          0.0        0.0        1                    
+RUE2             RECT_CLOSED  3                2          0.0        0.0        1                    
+RUE2Ra           CIRCULAR     0.6              0          0.0        0.0        1                    
+S402             CIRCULAR     0.3              0          0.0        0.0        1                    
+S401             CIRCULAR     0.8              0          0.0        0.0        1                    
+FBRa             CIRCULAR     0.8              0          0.0        0.0        1                    
+S602             CIRCULAR     1.2              0          0.0        0.0        1                    
+S701             CIRCULAR     0.4              0          0.0        0.0        1                    
+DBAus            CIRCULAR     1                0          0.0        0.0        1                    
+DBBu             CIRCULAR     1                0          0.0        0.0        1                    
+WE_RUE1          RECT_OPEN    2                5          0.0        0.0       
+WE_RUE2          RECT_OPEN    2                5          0.0        0.0       
+WE_FB            RECT_OPEN    1                5          0.0        0.0       
+KU_DB            RECT_OPEN    0.2              10         0.0        0.0       
+BU_DB            RECT_OPEN    2                10         0.0        0.0       
+BU_RRB           RECT_OPEN    1                5          0.0        0.0       
+
+[LOSSES]
+;;Link           Inlet      Outlet     Average    Flap Gate 
+;;-------------- ---------- ---------- ---------- ----------
+S101             0.00       0.00       0.00       NO
+S102             0.00       0.00       0.00       NO
+S301             0.00       0.00       0.00       NO
+S203             0.00       0.00       0.00       NO
+S202             0.00       0.00       0.00       NO
+S201             0.00       0.00       0.00       NO
+S601             0.00       0.00       0.00       NO
+RUE1             0.00       0.00       0.00       NO
+DBKu             0.00       0.00       0.00       NO
+RRBRa            0.00       0.00       0.00       NO
+RUE1Ra           0.00       0.00       0.00       NO
+RUE2             0.00       0.00       0.00       NO
+RUE2Ra           0.00       0.00       0.00       NO
+S402             0.00       0.00       0.00       NO
+S401             0.00       0.00       0.00       NO
+FBRa             0.00       0.00       0.00       NO
+S602             0.00       0.00       0.00       NO
+S701             0.00       0.00       0.00       NO
+DBAus            0.00       0.00       0.00       NO
+DBBu             0.00       0.00       0.00       NO
+
+[CURVES]
+;;Name           Type       X-Value    Y-Value   
+;;-------------- ---------- ---------- ----------
+PKRRB            Pump2      0          25        
+PKRRB                       8          25        
+
+PKFB             Pump2      0          15        
+PKFB                        7          15        
+
+PKDB             Pump2      0          100       
+PKDB                        9          100       
+
+SKRRB            Storage    0          100       
+SKRRB                       8          100       
+
+SKFB             Storage    0          100       
+SKFB                        7          100       
+
+SKDB             Storage    0          500       
+SKDB                        9          500       
+
+[TIMESERIES]
+;;Name           Date       Time       Value     
+;;-------------- ---------- ---------- ----------
+Euler                       00:00      0         
+Euler                       24:00      0         
+
+[REPORT]
+INPUT      NO
+CONTROLS   YES
+SUBCATCHMENTS NONE
+NODES ALL 
+LINKS ALL 
+
+[TAGS]
+
+[MAP]
+DIMENSIONS 3474734.156 5496831.864 3476024.635 5500200.857
+Units      None
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+S102             3475174.990        5499470.000       
+S601             3475174.990        5498969.990       
+S203             3475235.000        5498969.990       
+RUE2             3475195.000        5498969.990       
+S101             3475174.990        5499599.990       
+RUE1             3475345.000        5498969.990       
+S201             3475445.000        5498969.990       
+S602             3475174.990        5497679.990       
+S202             3475339.990        5498969.990       
+RUE1Ra           3475345.000        5498964.990       
+DBKu             3475180.000        5497095.000       
+RRBRa            3475170.000        5499480.000       
+S301             3475189.990        5498969.990       
+RUE2Ra           3475195.000        5498964.990       
+S401             3475094.990        5498969.990       
+FBRa             3475144.990        5498964.990       
+S402             3475149.990        5498969.990       
+S701             3475174.990        5497095.000       
+DBBu             3475180.000        5497104.990       
+DBAus            3475189.990        5497099.990       
+RRBAus           3475105.650        5499480.000       
+RUE1Ra1          3475345.000        5498865.000       
+RUE2Ra1          3475195.000        5498865.000       
+KLA              3475174.990        5496985.000       
+FBRa1            3475144.990        5498865.000       
+DBAus2           3475250.000        5497099.990       
+RRB              3475174.990        5499480.000       
+FB               3475144.990        5498969.990       
+DB               3475174.990        5497099.990       
+
+[VERTICES]
+;;Link           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+
