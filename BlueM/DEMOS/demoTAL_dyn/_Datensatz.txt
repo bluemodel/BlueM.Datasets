@@ -6,7 +6,6 @@ Talsperre mit dynamischer Betriebsregel
 Optimierungsziele:
 - Minimierung der Inanspruchnahme des Hochwasserschutzraums
 - Minimierung der Inanspruchnahme der Hochwasserentlastungsanlage 
-- Minimierung der hydrologischen Veränderung (IHA)
 
 Optimierungsparameter:
 - Oberer und unterer Faktor der dynamischen Betriebsregel
