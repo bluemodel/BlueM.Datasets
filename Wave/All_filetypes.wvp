@@ -1,0 +1,17 @@
+# Tests all file types
+#---------------------
+file=REG_SMUSI\N74235_Mue_10aV2.reg
+#	series=7423: "74235: N74235_Mue_10aV2.reg"
+file=UVF\42960.0_q_28.uvf
+#	series=Abfluss - Eisenach-Nesse: "Abfluss - Eisenach-Nesse: 42960.0_q_28.uvf"
+file=WEL\DEMONA_PSI.wel
+	series=S3  _1AB: "S3_1AB: DEMONA_PSI.wel"
+	series=S3  _1ZU: "S3_1ZU: DEMONA_PSI.wel"
+file=WEL_GISMO\BEK_WEL.asc
+	series=BEK_NH4Bek: "BEK_NH4Bek: BEK_WEL.asc"
+file=WEL_TALSIM\TALSIM.wel
+	series=S103_1AB: "S103_1AB: TALSIM.WEL"
+file=ZRE\Olef_Zufl_gem.zre
+#	series=Abfluss: "Abfluss: Olef_Zufl_gem.zre"
+file=ZRXP\Q2.1440.zrx
+#	series=Station.Q Rohwasser: "Station.Q Rohwasser: Q2.1440.zrx"
