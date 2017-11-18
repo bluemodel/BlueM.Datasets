@@ -15,3 +15,7 @@ file=ZRE\Olef_Zufl_gem.zre
 #	series=Abfluss: "Abfluss: Olef_Zufl_gem.zre"
 file=ZRXP\Q2.1440.zrx
 #	series=Station.Q Rohwasser: "Station.Q Rohwasser: Q2.1440.zrx"
+file=SWMM\Qzu_A128.txt
+	series=S203 FLOW: "S203 FLOW: SWMM routing file"
+file=SWMM\A128.out
+	series=S101 Total Inflow: "S101 Total Inflow: SWMM binary result file"
