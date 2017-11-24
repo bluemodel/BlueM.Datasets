@@ -1,0 +1,11 @@
+*Input-Zeitreihen (*.EXT)
+*========================
+[SETTINGS]
+VERSION=1.3
+PATHNet=
+PATHLocal=D:\DEV\BlueM\Datasets\TALSIM\HRBOBM\
+*|-----|------------|-----------------------------------------|
+*|Datei| Einh       |  ObjID    ZreID     DBID     Hoehe  Err |Bezeichnung
+*|-<->-|+<-------->+|-<------>-<------>-<------>-<------>--+--|
+ |1 1  |1m3/s      0| 856      1942     90       0         3  |BHQ1_Tn500_D_60_min
+*|-----|------------|-----------------------------------------|

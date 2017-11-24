@@ -1,0 +1,9 @@
+*Einzeleinleitungen (*.EIN)
+*==========================
+[SETTINGS]
+VERSION=1.3
+[SYSTEMELEMENT]
+Fields=Kensys	|CalcMode	|Qm	|Jgg	|Wgg	|Tgg	|DateiID	|Faktor	|StoffKng	|StoffTyp	|StoffSysVerweis	|StoffQabVerweis
+Start=1
+   EBHQ |  2  |        0|   |   |    |     1   |   100|     |   |    |    |
+
