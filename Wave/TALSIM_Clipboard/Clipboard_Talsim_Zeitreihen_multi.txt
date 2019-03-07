@@ -1,0 +1,26 @@
+[SETTINGS]
+Count=2
+[Zeitreihe1]
+SydroTyp=SydroBinZre
+ZRFormat=99
+ID=1041
+Extension=.BIN
+Kennung=Sce10, E038, C38 (TA_Tekeze TK 04B)
+KennungLang=Sce10, E038, C38 (TA_Tekeze TK 04B), m3/s
+Datei=C:\Talsim-NG\customers\Nile\projectData\hubert\dataBase\hubert_zre\00001041.BIN
+Einheit=m3/s
+Modell=TALSIM
+Interpretation=1
+EndZeitreihe
+[Zeitreihe2]
+SydroTyp=SydroBinZre
+ZRFormat=99
+ID=1042
+Extension=.BIN
+Kennung=Sce10, E039, C39 (TA_TK5)
+KennungLang=Sce10, E039, C39 (TA_TK5), m3/s
+Datei=C:\Talsim-NG\customers\Nile\projectData\hubert\dataBase\hubert_zre\00001042.BIN
+Einheit=m3/s
+Modell=TALSIM
+Interpretation=1
+EndZeitreihe
