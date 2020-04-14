@@ -1,21 +1,6 @@
 [SETTINGS]
 Count=1
 [Zeitreihe1]
-SydroTyp=SydroBinZre
-ZRFormat=99
-ID=279
-Extension=.BIN
-Kennung=Blue Nile at Roseires/el Deim, org
-KennungLang=Blue Nile at Roseires/el Deim, org, m3/s
-Datei=C:\Talsim-NG\customers\Nile\projectData\hubert\dataBase\hubert_zre\00000279.BIN
-Einheit=m3/s
-Modell=TALSIM
-Interpretation=1
-EndZeitreihe
-
-[SETTINGS]
-Count=1
-[Zeitreihe1]
 SydroTyp=SydroErgZre
 ZRFormat=4
 ID=482
@@ -23,7 +8,7 @@ Extension=.WEL
 Kennung=T552
 KennungLang={T552} {WSP, HYO} Waterlevel
 Zustand=WSP
-Datei=C:\Talsim-NG\customers\Nile\projectData\hubert\dataBase\hubert_data\00000482.WEL
+Datei=D:\Talsim-NG\customers\Nile\projectData\hubert\dataBase\hubert_data\00000482.WEL
 GeaendertAm=
 Modell=TALSIM
 Herkunft=simuliert

@@ -1,0 +1,14 @@
+[SETTINGS]
+Count=1
+[Zeitreihe1]
+SydroTyp=SydroBinZre
+ZRFormat=99
+ID=279
+Extension=.BIN
+Kennung=Blue Nile at Roseires/el Deim, org
+KennungLang=Blue Nile at Roseires/el Deim, org, m3/s
+Datei=D:\Talsim-NG\customers\Nile\projectData\hubert\dataBase\hubert_zre\00000279.BIN
+Einheit=m3/s
+Modell=TALSIM
+Interpretation=1
+EndZeitreihe
