@@ -1,0 +1,23 @@
+#REXCHANGEImport-Handwerte-Gesamtzufluss.Tag|*|
+#TZUTC+1|*|RINVAL-777|*|
+#LAYOUT(timestamp,value)|*|
+20200831080000 0.043
+20200901080000 0.500
+
+#REXCHANGEImport-Handwerte-Spuelwasserrueck.Tag|*|
+#TZUTC+1|*|RINVAL-777|*|
+#LAYOUT(timestamp,value)|*|
+20200831000000 633
+20200901000000 1632
+
+#REXCHANGEImport-Handwerte-Rohwasserentnahme.Tag|*|
+#TZUTC+1|*|RINVAL-777|*|
+#LAYOUT(timestamp,value)|*|
+20200831000000 25876
+20200901000000 29059
+
+#REXCHANGEImport-Handwerte-AbgabeAusGA.Tag|*|
+#TZUTC+1|*|RINVAL-777|*|
+#LAYOUT(timestamp,value)|*|
+20200831080000 23
+20200901080000 23
