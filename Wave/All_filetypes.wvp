@@ -1,8 +1,13 @@
 # Tests all file types
 #---------------------
+# ASC
 file=ASC_SMUSI\SMUSI_3.ASC
 	series=hN
+	
+# BIN
 file=BIN\abfluss_1.bin
+
+# CSV
 file=CSV\DEMONA_PSI.csv
 	isColumnSeparated=True
 	separator=;
@@ -14,17 +19,28 @@ file=CSV\DEMONA_PSI.csv
 	useUnits=True
 	columnWidth=16
 	dateTimeColumnIndex=0
-	series=AA  _TEM
+	series=AA  _TEM:AA_TEMP
+	series=AA  _1AB:AA_1AB
+	
+# DFS0
+file=DFS0\data_ndr_roese.dfs0
+	series="Point 1: Surface elevation"
+	
+# HYDRO_AS-2D
 file=HYDRO_AS-2D\Q_Strg.dat
 	series=49734
 file=HYDRO_AS-2D\Pegel.dat
 	series=812956
 file=HYDRO_AS-2D\BW_TMP.dat
 	series=658935-660224
+	
+# HYSTEM-EXTRAN
 file=HYSTEM-EXTRAN\HYSTEM-EXTRAN.DAT
 file=HYSTEM-EXTRAN\HYSTEM-EXTRAN.REG
 file=HYSTEM-EXTRAN\HYSTEM-EXTRAN.WEL
 	series=17P28
+	
+# PRMS
 file=PRMS\monthly_stori.out
 	series=N-PPT
 file=PRMS\annual_stori.out
@@ -33,23 +49,39 @@ file=PRMS\DPOUT_stori.out
 	series=SOIL MOISTURE
 file=PRMS\statvar.dat
 	series=basin_cms 1
+	
+# REG
 file=REG_SMUSI\N74235_Mue_10aV2.reg
+
+# SMB
 file=SIMBA\SIMBA.SMB
+
+# SydroSQLite
 file=SQLite\Timeseries\00000001.db
 file=SQLite\FlaggedTimeseries\00406420.db
 	series="00406420.db/0: Default"
 file=SQLite\FCTimeseries\00001411.db
 	series="Birx/Rhön/3: SPI.12M - 01.10.2019 00:00"
+
+# SWMM
 file=SWMM\Qzu_A128.txt
 	series=S203 FLOW
 file=SWMM\A128.out
 	series=S101 Total Inflow
+	
+# UVF
 file=UVF\42960.0_q_28.uvf
+
+# WEL
 file=WEL\DEMONA_PSI.wel
 	series=S3  _1AB
 file=WEL_GISMO\BEK_WEL.asc
 	series=BEK_NH4Bek
 file=WEL_TALSIM\TALSIM.wel
 	series=S103_1AB
+
+# ZRE
 file=ZRE\Olef_Zufl_gem.zre
+
+# ZRXP
 file=ZRXP\Q2.1440.zrx
