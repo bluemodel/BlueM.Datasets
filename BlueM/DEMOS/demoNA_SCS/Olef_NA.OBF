@@ -8,8 +8,9 @@
 *| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei | SimGröße   | ZielFkt  | EvalZeitraum |         Referenzreihe                  | IstWert |
 *|     |               |         |   |       |       |            |          | Start | Ende | RefGröße | Datei                       |         |
 *|-----|---------------|---------|---|-------|-------|------------|----------|-------|------|----------|-----------------------------|---------|
- |  P  | NashSutcliffe |         | - |       |  WEL  | S3  _1ZU   | NashSutt |       |      |          | ZRE\Pegel.zre               |         |
- |  P  | VolFehler     |         | - |       |  WEL  | S3  _1ZU   | Volf     |       |      |          | ZRE\Pegel.zre               |         |
+ |  P  | KGE           |         | + |       |  WEL  | S3  _1ZU   | KGE      |       |      |          | ZRE\Pegel.zre               |         |
+ |  S  | NashSutcliffe |         | + |       |  WEL  | S3  _1ZU   | NSE      |       |      |          | ZRE\Pegel.zre               |         |
+ |  S  | VolumeError   |         | - |       |  WEL  | S3  _1ZU   | BIAS     |       |      |          | ZRE\Pegel.zre               |         |
 *|-----|---------------|---------|---|-------|-------|------------|----------|-------|------|----------|-----------------------------|---------|
 *
 *ValueFromSeries
@@ -19,5 +20,5 @@
 *| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei |   SimGröße | ZielFkt | EvalZeitraum |   Referenzwert    | IstWert |
 *|     |               |         |   |       |       |            |         | Start | Ende | WertTyp | RefWert |         |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|---------|
- |  S  | QSpitze       |         | - |       |  WEL  | S3  _1ZU   | AbQuad  |       |      | MaxWert | 29.33   |         |
+ |  P  | PeakError     |         | - |       |  WEL  | S3  _1ZU   | SE      |       |      | Max     | 29.33   |         |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|---------|
