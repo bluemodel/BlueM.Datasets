@@ -8,9 +8,9 @@
 *| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei | SimGröße   | ZielFkt | EvalZeitraum |         Referenzreihe         | IstWert  |
 *|     |               |         |   |       |       |            |         | Start | Ende | RefGröße | Datei              |          |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|----------|--------------------|----------|
-*|  S  | StauzielDiff  |         |   |       |  WEL  | TOLF_VOL   | AbQuad  |       |      | HWSR     | ZRE\HWSR.wel       |          |
- |  P  | Stauzielüber  |         |   |       |  WEL  | TOLF_VOL   | sÜber   |       |      | HWSR     | ZRE\HWSR.wel       |   318615 |
- |  P  | Stauzielunter |         |   |       |  WEL  | TOLF_VOL   | sUnter  |       |      | HWSR     | ZRE\HWSR.wel       | 24600936 |
+ |  S  | StauzielDiff  |         |   |       |  WEL  | TOLF_VOL   | SSE     |       |      | HWSR     | ZRE\HWSR.wel       |          |
+ |  P  | Stauzielüber  |         |   |       |  WEL  | TOLF_VOL   | SGT     |       |      | HWSR     | ZRE\HWSR.wel       |   318615 |
+ |  P  | Stauzielunter |         |   |       |  WEL  | TOLF_VOL   | SLT     |       |      | HWSR     | ZRE\HWSR.wel       | 24600936 |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|----------|--------------------|----------|
 *
 *ValueFromSeries
@@ -20,9 +20,9 @@
 *| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei |   SimGröße | ZielFkt | EvalZeitraum |   Referenzwert    | IstWert  |
 *|     |               |         |   |       |       |            |         | Start | Ende | WertTyp | RefWert |          |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|----------|
-*|  P  | Überlauf      |         |   |       |  WEL  | TOLF_QH2   | Diff    |       |      | MaxWert |    0    |    3.976 |
-*|  S  | WVersorgung   |         | + |       |  KWL  | KGRP_Y36   | Diff    |       |      | Average |    0    | -0.10757 |
- |  P  | Wasserkraft   |         | + |       |  KWL  | KGRP_Y35   | Diff    |       |      | Average |    0    |   -49.93 |
-*|  P  | MaxQab        |         |   |       |  WEL  | S09 _1ZU   | Diff    |       |      | MaxWert |    0    |    8.976 |
+ |  P  | Überlauf      |         | - |       |  WEL  | TOLF_QH2   | SE      |       |      | Max     |    0    |    3.976 |
+ |  P  | WVersorgung   |         | + |       |  KWL  | KGRP_Y36   | SE      |       |      | Avg     |    0    | -0.10757 |
+ |  P  | Wasserkraft   |         | + |       |  KWL  | KGRP_Y35   | SE      |       |      | Avg     |    0    |   -49.93 |
+ |  P  | MaxQab        |         | - |       |  WEL  | S09 _1ZU   | SE      |       |      | Max     |    0    |    8.976 |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|----------|
 *
