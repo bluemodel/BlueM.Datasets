@@ -1,15 +1,17 @@
-*OptimierungsZiele
-*=================
+*Objective functions
+*===================
 *
-*|---------------|-----------|--------|-----------|----------|---------------------|---------------------------------------|
-*|               |           |        |           |          |       Zielwert      |       Zielreihe                       |
-*| Bezeichnung   | ZielTyp   | Datei  | SpalteWel | ZielFkt  | WertTyp  | ZielWert | ZielGröße | Datei                     |
-*|---------------|-----------|--------|-----------|----------|----------|----------|-----------|---------------------------|
-*|   S001 Q ab   | Wert      |   WEL  | S001_1AB  | Diff     | MaxWert  |        0 |           |                           |
-*|   S001 WSP    | Wert      |   WEL  | S001_WSP  | Diff     | MaxWert  |        0 |           |                           |
-*|   S002 Q ab   | Wert      |   WEL  | S002_1AB  | Diff     | MaxWert  |        0 |           |                           |
-*|   S002 WSP    | Wert      |   WEL  | S002_WSP  | Diff     | MaxWert  |        0 |           |                           |
- |   S004 Q ab   | Wert      |   WEL  | S004_1AB  | Diff     | MaxWert  |        0 |           |                           |
-*|   S004 WSP    | Wert      |   WEL  | S004_WSP  | Diff     | MaxWert  |        0 |           |                           |
- |   BauKosten   | Kosten    |   WEL  | S004_1AB  | Diff     | MaxWert  |        0 |           |                           |
-*|---------------|-----------|--------|-----------|----------|----------|----------|-----------|---------------------------|
+*ValueFromSeries
+*---------------
+*
+*|-----|---------------|---------|---|-------|-------|-----------|---------|---------|---------|----------------------|----------|
+*| Opt | Name          | Group   | D | OpFac | File  | SimResult | ObjFunc | Evaluation period | Reference value      | CurValue |
+*|     |               |         |   |       |       |           |         | Start   | Ende    | ValueType | RefValue |          |
+*|-----|---------------|---------|---|-------|-------|-----------|---------|---------|---------|-----------|----------|----------|
+*|  P  |   S001 Q ab   |         | - |       |  WEL  | S001_1AB  | Diff    |         |         |  MaxWert  |        0 |          |
+*|  P  |   S001 WSP    |         | - |       |  WEL  | S001_WSP  | Diff    |         |         |  MaxWert  |        0 |          |
+*|  P  |   S002 Q ab   |         | - |       |  WEL  | S002_1AB  | Diff    |         |         |  MaxWert  |        0 |          |
+*|  P  |   S002 WSP    |         | - |       |  WEL  | S002_WSP  | Diff    |         |         |  MaxWert  |        0 |          |
+ |  P  |   S004 Q ab   |         | - |       |  WEL  | S004_1AB  | Diff    |         |         |  MaxWert  |        0 |          |
+*|  P  |   S004 WSP    |         | - |       |  WEL  | S004_WSP  | Diff    |         |         |  MaxWert  |        0 |          |
+*|-----|---------------|---------|---|-------|-------|-----------|---------|---------|---------|-----------|----------|----------|
