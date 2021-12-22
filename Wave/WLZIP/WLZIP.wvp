@@ -1,0 +1,4 @@
+# test for reading from WLZIP
+# delete any existing TALSIM.WEL file before testing
+file=TALSIM.WEL
+	series=S001_1AB
