@@ -14,6 +14,8 @@
 *|  S  | NashSutcliffe   |         | - |       |  WEL  | S3  _1ZU   | NashSutt   |       |      |          | ZRE\Pegel.zre               |         |
 *|  S  | LnNashSutcliffe |         | - |       |  WEL  | S3  _1ZU   | LnNashSutt |       |      |          | ZRE\Pegel.zre               |         |
  |  S  | Bias            |         | - |       |  WEL  | S3  _1ZU   | BIAS       |       |      |          | ZRE\Pegel.zre               |         |
+ |  S  | MAE             |         | - |       |  WEL  | S3  _1ZU   | MAE        |       |      |          | ZRE\Pegel.zre               |         |
+ |  S  | MSE             |         | - |       |  WEL  | S3  _1ZU   | MSE        |       |      |          | ZRE\Pegel.zre               |         |
 *|-----|-----------------|---------|---|-------|-------|------------|------------|-------|------|----------|-----------------------------|---------|
 *
 *ValueFromSeries
