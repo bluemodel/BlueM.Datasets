@@ -32,8 +32,8 @@ LINK_OFFSETS         DEPTH
 MIN_SLOPE            0
 
 [FILES]
-USE INFLOWS "d:\data\develop\devtest\swmm\A128_opti\Qzu_A128.txt"
-USE HOTSTART "d:\data\develop\devtest\swmm\A128_opti\A128_1200.hsf"
+USE INFLOWS "Qzu_A128.txt"
+USE HOTSTART "A128.hsf"
 
 [EVAPORATION]
 ;;Type       Parameters
@@ -95,11 +95,11 @@ S203             S203             RUE2             40.00      0.013      0.00   
 S202             S202             S203             100.00     0.013      0.00       0.00       0.1        0.0       
 S201             S201             RUE1             100.00     0.013      0.00       0.00       0.1        0.0       
 S601             S601             S602             1290.0     0.013      0.00       0.00       0.1        0.0       
-RUE1             RUE1             S202             5.00       0.013      0.00       0.00       0.1        49.6      
+RUE1             RUE1             S202             5.00       0.013      0.00       0.00       0.1        50.0      
 DBKu             DBKu             DBAus            10.00      0.013      0.00       0.00       0.1        0.0       
 RRBRa            RRBRa            RRBAus           50.00      0.013      0.00       0.00       0.1        0.0       
 RUE1Ra           RUE1Ra           RUE1Ra1          100.00     0.013      0.00       0.00       0.1        0.0       
-RUE2             RUE2             S301             5.00       0.013      0.00       0.00       0.1        100       
+RUE2             RUE2             S301             5.00       0.013      0.00       0.00       0.1        100.0     
 RUE2Ra           RUE2Ra           RUE2Ra1          100.00     0.013      0.00       0.00       0.1        0.0       
 S402             S402             S601             20.00      0.013      0.00       0.00       0.1        0.0       
 S401             S401             FB               50.00      0.013      0.00       2.5        0.1        0.0       
@@ -185,11 +185,11 @@ DBBu             0.00       0.00       0.00       NO
 [CURVES]
 ;;Name           Type       X-Value    Y-Value   
 ;;-------------- ---------- ---------- ----------
-PKRRB            Pump2      0          20        
-PKRRB                       8          20        
+PKRRB            Pump2      0          25        
+PKRRB                       8          25        
 
-PKFB             Pump2      0          14        
-PKFB                        7          14        
+PKFB             Pump2      0          15        
+PKFB                        7          15        
 
 PKDB             Pump2      0          100       
 PKDB                        9          100       

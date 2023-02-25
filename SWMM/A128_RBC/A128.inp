@@ -95,11 +95,11 @@ S203             S203             RUE2             40.00      0.013      0.00   
 S202             S202             S203             100.00     0.013      0.00       0.00       0.1        0.0       
 S201             S201             RUE1             100.00     0.013      0.00       0.00       0.1        0.0       
 S601             S601             S602             1290.0     0.013      0.00       0.00       0.1        0.0       
-RUE1             RUE1             S202             5.00       0.013      0.00       0.00       0.1        75.0      
+RUE1             RUE1             S202             5.00       0.013      0.00       0.00       0.1        50.0      
 DBKu             DBKu             DBAus            10.00      0.013      0.00       0.00       0.1        0.0       
 RRBRa            RRBRa            RRBAus           50.00      0.013      0.00       0.00       0.1        0.0       
 RUE1Ra           RUE1Ra           RUE1Ra1          100.00     0.013      0.00       0.00       0.1        0.0       
-RUE2             RUE2             S301             5.00       0.013      0.00       0.00       0.1        120.0     
+RUE2             RUE2             S301             5.00       0.013      0.00       0.00       0.1        100.0     
 RUE2Ra           RUE2Ra           RUE2Ra1          100.00     0.013      0.00       0.00       0.1        0.0       
 S402             S402             S601             20.00      0.013      0.00       0.00       0.1        0.0       
 S401             S401             FB               50.00      0.013      0.00       2.5        0.1        0.0       
@@ -182,30 +182,11 @@ S701             0.00       0.00       0.00       NO
 DBAus            0.00       0.00       0.00       NO
 DBBu             0.00       0.00       0.00       NO
 
-[CONTROLS]
-RULE RRB_01
-IF NODE RRB DEPTH > 1
-AND NODE DB DEPTH < 2
-THEN PUMP RRB SETTING = 4
-
-RULE RRB_02
-IF NODE RRB DEPTH < .9
-THEN PUMP RRB SETTING = 1
-
-RULE FB_01
-IF NODE FB DEPTH > 1
-AND NODE DB DEPTH < 3
-THEN PUMP FB SETTING = 4
-
-RULE FB_02
-IF NODE FB DEPTH < .9
-THEN PUMP FB SETTING = 1
-
 [CURVES]
 ;;Name           Type       X-Value    Y-Value   
 ;;-------------- ---------- ---------- ----------
-PKRRB            Pump2      0          28        
-PKRRB                       8          28        
+PKRRB            Pump2      0          25        
+PKRRB                       8          25        
 
 PKFB             Pump2      0          15        
 PKFB                        7          15        
@@ -232,8 +213,8 @@ Euler                       24:00      0
 INPUT      NO
 CONTROLS   YES
 SUBCATCHMENTS NONE
-NODES ALL
-LINKS ALL
+NODES ALL 
+LINKS ALL 
 
 [TAGS]
 
