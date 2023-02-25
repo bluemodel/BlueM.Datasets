@@ -3,7 +3,7 @@
 [SETTINGS]
 VERSION=1.3
 PATHNet=
-PATHLocal=D:\DEV\BlueM\Datasets\TALSIM\HRBOBM\
+PATHLocal=H:\DEV\BLUEM\CODE\BlueM.Datasets\TALSIM\HRBOBM\
 *|-----|------------|-----------------------------------------|
 *|Datei| Einh       |  ObjID    ZreID     DBID     Hoehe  Err |Bezeichnung
 *|-<->-|+<-------->+|-<------>-<------>-<------>-<------>--+--|
