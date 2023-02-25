@@ -1,1 +1,0 @@
-In der EXT-Datei muss das Verzeichnis zur verwendeten Zeitreihe (PATHLocal) angepasst werden!
