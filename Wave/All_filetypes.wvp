@@ -60,13 +60,6 @@ file=SMUSI\N74235_Mue_10aV2.reg
 # SMB
 file=SIMBA\SIMBA.SMB
 
-# SydroSQLite
-file=SQLite\Timeseries\00000001.db
-file=SQLite\FlaggedTimeseries\00406420.db
-	series="00406420.db/0: Default"
-file=SQLite\FCTimeseries\00001411.db
-	series="Birx/Rhön/3: SPI.12M - 01.10.2019 00:00"
-
 # SWMM
 file=SWMM\Qzu_A128.txt
 	series=S203 FLOW
@@ -78,6 +71,11 @@ file=SWMM\LIDRep_BRC.txt
 # TALSIM
 file=TALSIM\TALSIM.wel
 	series=S103_1AB
+file=TALSIM\SQLite\Timeseries\00000001.db
+file=TALSIM\SQLite\FlaggedTimeseries\00406420.db
+	series="00406420.db/0: Default"
+file=TALSIM\SQLite\FCTimeseries\00001411.db
+	series="Birx/Rhön/3: SPI.12M - 01.10.2019 00:00"
 
 # UVF
 file=UVF\42960.0_q_28.uvf
