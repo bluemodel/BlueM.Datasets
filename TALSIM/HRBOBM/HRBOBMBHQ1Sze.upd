@@ -1,9 +1,0 @@
-#Variation/Update-Konfiguration:
-[SETTINGS]
-VERSION=1.1
-IsActive=0
-[ATTRIBUTES]
-CountAttributes=0
-#ID;Active;Identifier;Type;KENSYS;IDObj;IDDatabase;ParKey;ParName;ParType;Input-File;PrePostCalc;Beschreibung
-[SimulationVariants]
-0=defaultSim;1;Standard-Simulation
