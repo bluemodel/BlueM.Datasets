@@ -1,0 +1,2 @@
+# BlueM.Datasets
+BlueM.Datasets contains demo datasets and testing data for [BlueM.Sim](https://github.com/bluemodel/BlueM.Sim), [BlueM.Opt](https://github.com/bluemodel/BlueM.Opt) and [BlueM.Wave](https://github.com/bluemodel/BlueM.Wave)
