@@ -7,7 +7,7 @@ VERSION=1.1
 *|    Beschreibung        |  Nr. |  1    2    3   |  1    2    3   |   |   |       |       | | | |
 *|<--------------------->-|-<-->-|-<-->-<-->-<-->-|-<-->-<-->-<-->-|-+-|-+-|<----->|<----->|+|+|+|
  | Zufluss BHQ1 und BHQ2  | EBHQ |                | TOBM           | J | J | 6500.0| 3000.0|3|0|J|Zufluss BHQ1 und BHQ2
- | HRB Obereiper Mühle    | TOBM |                | S000           | J | J | 5500.0| 3000.0|3|2|J|HRB Obereiper Mühle
- | Unterlauf HRB OBM      | S000 |                | ZPG            | J | J | 4500.0| 3000.0|3|0|J|Unterlauf HRB OBM
+ | HRB                    | TOBM |                | S000           | J | J | 5500.0| 3000.0|3|2|J|HRB
+ | Unterlauf HRB          | S000 |                | ZPG            | J | J | 4500.0| 3000.0|3|0|J|Unterlauf HRB
  | ZIELPEGEL              | ZPG  |                |                |   |   | 3500.0| 3000.0|3|0|J|ZIELPEGEL
 *|-------------------------------|----------------|----------------|---|---|-------|-------|-|-|-|
