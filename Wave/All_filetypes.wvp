@@ -44,6 +44,10 @@ file=HYSTEM-EXTRAN\HYSTEM-EXTRAN.REG
 file=HYSTEM-EXTRAN\HYSTEM-EXTRAN.WEL
 	series=17P28
 	
+# JAMS
+file=JAMS\TimeLoop.dat
+	series=tmean
+	
 # PRMS
 file=PRMS\monthly_stori.out
 	series=N-PPT
