@@ -1,0 +1,217 @@
+[TITLE]
+;;Project Title/Notes
+RTC-Benchmarksytem
+DWA-M 180
+29.12.2008 18:28:05
+
+[OPTIONS]
+;;Option             Value
+FLOW_UNITS           LPS
+INFILTRATION         CURVE_NUMBER
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS         DEPTH
+MIN_SLOPE            0
+ALLOW_PONDING        YES
+SKIP_STEADY_STATE    NO
+
+START_DATE           04/01/2008
+START_TIME           11:30:00
+REPORT_START_DATE    04/01/2008
+REPORT_START_TIME    11:30:00
+END_DATE             04/03/2008
+END_TIME             12:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             0
+REPORT_STEP          00:01:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:01 
+RULE_STEP            00:00:00
+
+INERTIAL_DAMPING     PARTIAL
+NORMAL_FLOW_LIMITED  SLOPE
+FORCE_MAIN_EQUATION  H-W
+VARIABLE_STEP        0.75
+LENGTHENING_STEP     0
+MIN_SURFAREA         0
+MAX_TRIALS           0
+HEAD_TOLERANCE       0
+SYS_FLOW_TOL         5
+LAT_FLOW_TOL         5
+MINIMUM_STEP         0.5
+THREADS              1
+
+[FILES]
+;;Interfacing Files
+USE INFLOWS "M180Qzu_WQ.txt"
+
+[EVAPORATION]
+;;Data Source    Parameters
+;;-------------- ----------------
+CONSTANT         0.0
+DRY_ONLY         NO
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded   
+;;-------------- ---------- ---------- ---------- ---------- ----------
+S101             106.5      4          .00        0          100       
+S103             105.8      4          .00        0          100       
+S104             100.8      4          .00        0          100       
+S202             99.8       4          .00        0          100       
+S111             103.15     4          .00        0          100       
+S201             100.8      4          .00        0          100       
+S204             99.7       4          .00        0          100       
+S211             95.5       4          .00        0          100       
+R101             103.05     5          0          0          0         
+R102             103        0          0          0          0         
+R103             102.9      5          0          0          0         
+
+[OUTFALLS]
+;;Name           Elevation  Type       Stage Data       Gated    Route To        
+;;-------------- ---------- ---------- ---------------- -------- ----------------
+S212             95.4       FREE                        NO                       
+S205             99.5       FREE                        NO                       
+R104             102.8      FREE                        NO                       
+
+[STORAGE]
+;;Name           Elev.    MaxDepth   InitDepth  Shape      Curve Name/Params            N/A      Fevap    Psi      Ksat     IMD     
+;;-------------- -------- ---------- ----------- ---------- ---------------------------- -------- --------          -------- --------
+B100             105.8    8          .00        TABULAR    SKB100                       0        0       
+B200             94       8          .00        TABULAR    SKB200                       0        0       
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow   
+;;-------------- ---------------- ---------------- ---------- ---------- ---------- ---------- ---------- ----------
+S101             S101             B100             50.00      0.013      0.00       0.00       0.1        0.0       
+S103             S103             S104             1000.0     0.013      0.00       0.00       0.1        0.0       
+S104             S104             S202             200.00     0.013      0.00       0.00       0.1        0.0       
+S111             S111             R102             15.00      0.013      0.00       0.00       0.1        0.0       
+S201             S201             S202             200.00     0.013      0.00       0.00       0.1        0.0       
+S202             S202             B200             100.00     0.013      0.00       5.70       0.1        0.0       
+S211             S211             S212             15.00      0.013      0.00       0.00       0.1        0.0       
+S204             S204             S205             50.00      0.013      0.00       0.00       0.1        0.0       
+R101             R101             R102             400        0.01       0          0          0          0         
+R102             R102             R103             400        0.01       0          0          0          0         
+R103             R103             R104             400        0.01       0          0          0          0         
+
+[PUMPS]
+;;Name           From Node        To Node          Pump Curve       Status   Sartup Shutoff 
+;;-------------- ---------------- ---------------- ---------------- ------ -------- --------
+B100             B100             S103             PKB100Pp         ON       0        0       
+B200             B200             S204             PKB200Pp         ON       0        0       
+
+[WEIRS]
+;;Name           From Node        To Node          Type         CrestHt    Qcoeff     Gated    EndCon   EndCoeff   Surcharge  RoadWidth  RoadSurf   Coeff. Curve
+;;-------------- ---------------- ---------------- ------------ ---------- ---------- -------- -------- ---------- ---------- ---------- ---------- ----------------
+B100Wr           B100             S111             SIDEFLOW     3          1.475      NO       0        0          YES       
+B200Wr           B200             S211             SIDEFLOW     2          1.475      NO       0        0          YES       
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert   
+;;-------------- ------------ ---------------- ---------- ---------- ---------- ---------- ----------
+S101             CIRCULAR     0.8              0          0.0        0.0        1                    
+S103             CIRCULAR     0.4              0          0.0        0.0        1                    
+S104             CIRCULAR     0.4              0          0.0        0.0        1                    
+S111             CIRCULAR     0.8              0          0.0        0.0        1                    
+S201             CIRCULAR     0.8              0          0.0        0.0        1                    
+S202             CIRCULAR     1.5              0          0.0        0.0        1                    
+S211             CIRCULAR     0.8              0          0.0        0.0        1                    
+S204             CIRCULAR     0.4              0          0.0        0.0        1                    
+R101             RECT_OPEN    5                5          0          0          1                    
+R102             RECT_OPEN    5                5          0          0          1                    
+R103             RECT_OPEN    5                5          0          0          1                    
+B100Wr           RECT_OPEN    1                10         0.0        0.0       
+B200Wr           RECT_OPEN    1                10         0.0        0.0       
+
+[LOSSES]
+;;Link           Kentry     Kexit      Kavg       Flap Gate  Seepage   
+;;-------------- ---------- ---------- ---------- ---------- ----------
+S101             0.00       0.00       0.00       NO         0         
+S103             0.00       0.00       0.00       NO         0         
+S104             0.00       0.00       0.00       NO         0         
+S111             0.00       0.00       0.00       NO         0         
+S201             0.00       0.00       0.00       NO         0         
+S202             0.00       0.00       0.00       NO         0         
+S211             0.00       0.00       0.00       NO         0         
+S204             0.00       0.00       0.00       NO         0         
+
+[POLLUTANTS]
+;;Name           Units  Crain      Cgw        Crdii      Kdecay     SnowOnly   Co-Pollutant     Co-Frac    Cdwf       Cinit     
+;;-------------- ------ ---------- ---------- ---------- ---------- ---------- ---------------- ---------- ---------- ----------
+COD              MG/L   0.0        0.0        0.0        0          NO         *                0.0        0          0         
+
+[TREATMENT]
+;;Node           Pollutant        Function  
+;;-------------- ---------------- ----------
+S205             COD              C = (FLOW / 45) * 20
+
+[INFLOWS]
+;;Node           Constituent      Time Series      Type     Mfactor  Sfactor  Baseline Pattern
+;;-------------- ---------------- ---------------- -------- -------- -------- -------- --------
+R101             FLOW             ""               FLOW     1.0      1.0      100     
+R101             COD              ""               CONCEN   1.0      1.0      10      
+
+[CURVES]
+;;Name           Type       X-Value    Y-Value   
+;;-------------- ---------- ---------- ----------
+PKB100Pp         Pump4      0          0         
+PKB100Pp                    0.5        45        
+PKB100Pp                    8          45        
+;
+PKB200Pp         Pump4      0          0         
+PKB200Pp                    0.5        90        
+PKB200Pp                    8          90        
+;
+SKB100           Storage    0          400       
+SKB100                      8          400       
+;
+SKB200           Storage    0          600       
+SKB200                      8          600       
+
+[TIMESERIES]
+;;Name           Date       Time       Value     
+;;-------------- ---------- ---------- ----------
+Euler                       00:00      0         
+Euler                       02:00      0         
+Euler                       02:01      100       
+Euler                       03:00      100       
+Euler                       03:01      0         
+
+[REPORT]
+;;Reporting Options
+CONTROLS   YES
+SUBCATCHMENTS ALL
+NODES ALL
+LINKS ALL
+
+[TAGS]
+
+[MAP]
+DIMENSIONS 3499647.021 5499854.390 3501221.570 5500397.422
+Units      None
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+S101             3500000.000        5500000.000       
+S103             3500060.000        5500000.000       
+S104             3501000.000        5500000.000       
+S202             3501000.000        5500200.000       
+S111             3500050.000        5499995.000       
+S201             3500800.000        5500200.000       
+S204             3501110.000        5500200.000       
+S211             3501100.000        5500195.000       
+R101             3499912.091        5499993.371       
+R102             3500050.000        5499980.000       
+R103             3500853.329        5499850.519       
+S212             3501100.000        5500180.000       
+S205             3501150.000        5500200.000       
+R104             3501140.620        5499842.582       
+B100             3500050.000        5500000.000       
+B200             3501100.000        5500200.000       
+
+[VERTICES]
+;;Link           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+
