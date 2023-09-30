@@ -68,9 +68,10 @@ file=SIMBA\SIMBA.SMB
 file=SWMM\Qzu_A128.txt
 	series=S203 FLOW
 file=SWMM\A128.out
-	series=S101 Total Inflow
+	series=Node S101 Total Inflow
 file=SWMM\LIDRep_BRC.txt
 	series=Total Inflow
+file=SWMM\SWMM5_TimeSeriesFile.dat
 	
 # TALSIM
 file=TALSIM\TALSIM.wel
