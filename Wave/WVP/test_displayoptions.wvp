@@ -1,0 +1,6 @@
+# Wave project file
+file=..\WEL\DEMONA_PSI.wel
+    series=AA  _1AB
+    series=AB  _1AB:AB  _1AB custom title
+    series=AC  _1AB:title=AC  _1AB custom title
+    series=AD  _1AB:title="AD  _1AB ,= custom title", unit="m³/s", interpretation=BlockLeft, color=Red, linestyle=Dash, linewidth=4, showpoints=True
