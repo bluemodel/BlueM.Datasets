@@ -1,0 +1,9 @@
+# Import multiple series from multiple files
+#-------------------------------------------
+file=..\UVF\42960.0_q_28.uvf
+file=..\WEL\DEMONA_PSI.wel
+ series=S3  _1AB: S3 outflow
+ series=S3  _1ZU: S3 inflow
+file=..\ZRE\Zufl_gem.zre
+file=..\BIN\abfluss_1.bin
+ series=abfluss_1.bin: title="Discharge", unit="m3/s", interpretation=Instantaneous, color=Red, linewidth=4, linestyle=Dash, showPoints=True
