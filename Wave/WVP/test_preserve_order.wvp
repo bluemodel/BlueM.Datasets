@@ -1,0 +1,10 @@
+# Tests preserving series order #194
+#-----------------------------------
+file=..\WEL\DEMONA_PSI.wel
+	series=AA  _ETP:Series 1
+
+# ZRE
+file=..\ZRE\Zufl_gem.zre
+
+file=..\WEL\DEMONA_PSI.wel
+	series=AA  _TEM:Series 3
