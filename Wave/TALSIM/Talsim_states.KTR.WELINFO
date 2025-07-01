@@ -1,0 +1,38 @@
+*WELINFO
+[SETTINGS]
+SysVarId=         0
+SimId=         0
+Titel=
+Kommentar1=
+Kommentar2=
+VersionDatumBenutzer=18.06.2025 07:49:50
+System=
+SystemVariante=
+DatumVon=01.01.2015 00:00
+DatumBis=01.02.2015 00:00
+ZREDatumVon=01.01.2015 00:00
+ZREDatumbis=01.02.2015 00:00
+ZeitschrittMinute=   60
+AnzahlZeitSchritte=     745
+Datentyp=    2
+AnzahlElemente=        16
+[THEMA]
+Kennung=KTR
+Beschreibung=Rules&Controls
+[Elemente]
+SA14_011;1ZU;Pegel Rebbelroth;m3/s;     0
+TWIE_024;VOL;InhaltProportion;Tsd.m3;     1
+S118_010;1AB;PegelLoeffelsterz_MA;m3/s;     2
+S095_008;1AB;Pegel Perke;m3/s;     3
+S095_009;1ZU;LP-an/aus Pgl Perke;m3/s;     4
+S009_007;1AB;Pegel Weiershagen;m3/s;     5
+EV01_005;1AB;GW_Volumen_0,1pct;m3/s;     6
+KGRP_028;GRP;Vol>10=1;-;     7
+KGRP_030;GRP;Vol<10=250l/s;-;     8
+KGRP_031;GRP;LAM_fein_aggregiert;-;     9
+KGRP_038;GRP;SPI<x=0;-;    10
+KGRP_039;GRP;GW_Volumen_0,1(n=10);-;    11
+KGRP_040;GRP;Vol (n=10);-;    12
+KGRP_041;GRP;VOL10-JGG10<=0=0;-;    13
+KGRP_063;GRP;QA1_Stop;-;    14
+KGRP_066;GRP;Umschalt>=1=1_Normal;-;    15

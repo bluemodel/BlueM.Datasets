@@ -1,0 +1,8 @@
+[Zeitreihe1]
+SydroTyp=SydroErgZre
+ZRFormat=4
+Kennung=KGRP
+Zustand=040
+Datei=H:\DEV\BLUEM\CODE\BlueM.Datasets\Wave\TALSIM\Talsim_states.KTR.WEL
+Interpretation=2
+EndZeitreihe
