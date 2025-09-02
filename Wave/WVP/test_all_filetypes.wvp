@@ -25,6 +25,10 @@ file=..\CSV\DEMONA_PSI.csv
 # DFS0
 file=..\DFS0\data_ndr_roese.dfs0
 	series="Point 1: Surface elevation"
+	
+# GINA
+file=..\GINA\gina_trs_wel.gbl
+	series=NH3_zu
 
 # GISMO	
 file=..\GISMO\BEK_WEL.asc
