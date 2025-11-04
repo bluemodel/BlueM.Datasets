@@ -1,5 +1,6 @@
 Gew.Typ.:;19   ;;                   
-Grundlast:;  1069.200; l/s;                   
+Grundlast:;  1069.200; l/s;
+QM Klaeranlage:;       0.0; l/s;                   
 AEO:;    13.500; km2;                   
 AEOpnat:;    13.728; km2;                   
 T Datum Zeit     ;    Q_zu;    Q_ab;      tf;
