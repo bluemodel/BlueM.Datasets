@@ -31,8 +31,12 @@ file=..\FEWS_PI\test_fews_pi.xml
 	series=SMAN.1AB
 
 # GINA
-file=..\GINA\gina_trs_wel.gbl
+file=..\GINA\gina_HNW.csv
+	series=tf
+file=..\GINA\sample_pollutant.gbl
 	series=NH3_zu
+file=..\GINA\sample_hydraulic.gbl
+	series=Qzu
 
 # GISMO	
 file=..\GISMO\BEK_WEL.asc
