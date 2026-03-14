@@ -5,15 +5,15 @@ SydroTyp=SydroErgZre
 ZRFormat=4
 ID=482
 Extension=.WEL
-Kennung=T552
-KennungLang={T552} {WSP, HYO} Waterlevel
-Zustand=WSP
-Datei=D:\Talsim-NG\customers\Nile\projectData\hubert\dataBase\hubert_data\00000482.WEL
+Kennung=S0
+KennungLang={S0} {1AB, QQQ} Discharge
+Zustand=1AB
+Datei=H:\DEV\BLUEM\CODE\BlueM.Datasets\Wave\WEL\OLEF_NA_ORG1000.wel
 GeaendertAm=
 Modell=TALSIM
 Herkunft=simuliert
 Interpretation=2
-SimVariante=dt=5d. T213=QR2 off, T552=QR2 off, T432_QR2 Factor=8/Sce00 vs.1.0 (like *Baseline01) + UpperAtbara Irr. + new Q TS
-Simulation=dt=5d. T213=QR2 off, T552=QR2 off, T432_QR2 Factor=8
-Einheit=mNN
+SimVariante=
+Simulation=
+Einheit=m3/s
 EndZeitreihe
