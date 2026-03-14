@@ -88,6 +88,8 @@ file=..\SWMM\SWMM5_TimeSeriesFile.dat
 # TALSIM
 file=..\TALSIM\Talsim_states.KTR.WEL
 	series=KGRP_066
+file=..\TALSIM\Talsim.WBL
+	series=S001_1AB
 
 # UVF
 file=..\UVF\42960.0_q_28.uvf
