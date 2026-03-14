@@ -1,0 +1,53 @@
+*WELINFO
+[SETTINGS]
+SysVarId=         0
+SimId=         0
+Titel=
+Kommentar1=
+Kommentar2=
+VersionDatumBenutzer=13.03.2026 17:24:18
+System=
+SystemVariante=
+DatumVon=01.01.2020 00:00
+DatumBis=08.01.2020 00:00
+ZREDatumVon=01.01.2020 00:00
+ZREDatumbis=08.01.2020 00:00
+ZeitschrittMinute=    5
+AnzahlZeitSchritte=      2016
+Datentyp=    2
+AnzahlElemente=        31
+[THEMA]
+Kennung=HYO
+Beschreibung=Hydrology,Hydraulics
+[Elemente]
+       A001_1ZU;Inflow; Sub-Catchment;m3/s;     0
+       A001_NIE;Rainfall; Sub-Catchment;mm;     1
+       A001_NEF;Eff_Rainfall; Sub-Catchment;mm;     2
+       A001_TEM;Airtemperature; Sub-Catchment;oC;     3
+       A001_ETP;ETp; Sub-Catchment;mm;     4
+       A001_ETA;ETa; Sub-Catchment;mm;     5
+       A001_INC;Interception; Sub-Catchment;mm;     6
+       A001_SCH;Snow; Sub-Catchment;mm;     7
+       A001_BOF;SoilMoisture rel; Sub-Catchment;mm/m;     8
+       A001_EXC;Soilmoisture_excess; Sub-Catchment;mm;     9
+       A001_INF;Infiltration; Sub-Catchment;mm;    10
+       A001_UIS;Upstream_into_Soil; Sub-Catchment;mm;    11
+       A001_INT;Interflow; Sub-Catchment;mm;    12
+       A001_ITT;Interflow_deep; Sub-Catchment;mm;    13
+       A001_EXX;Exfiltration; Sub-Catchment;mm;    14
+       A001_QOB;Q_SurfRunoff; Sub-Catchment;m3/s;    15
+       A001_QUO;Q_UrbRunoff; Sub-Catchment;m3/s;    16
+       A001_QNO;Q_RuralRunoff; Sub-Catchment;m3/s;    17
+       A001_QIN;Q_Interflow; Sub-Catchment;m3/s;    18
+       A001_QIT;Q_Interflow_deep; Sub-Catchment;m3/s;    19
+       A001_QBA;Q_Base; Sub-Catchment;m3/s;    20
+       A001_QGW;Q_Groundwater; Sub-Catchment;m3/s;    21
+       A001_1AB;Outflow_1; Sub-Catchment;m3/s;    22
+       S001_1ZU;Inflow; Sewer, open channel;m3/s;    23
+       S001_1AB;Outflow_1; Sewer, open channel;m3/s;    24
+       S001_2AB;Outflow_2; Sewer, open channel;m3/s;    25
+       S001_WSP;Waterlevel; Sewer, open channel;m;    26
+       S001_VEL;Veloc; Sewer, open channel;m/s;    27
+       S001_OBF;Surface; Sewer, open channel;m2;    28
+       S001_VOL;Volume_Tsdm3; Sewer, open channel;Tsd.m3;    29
+       S001_ICT;Ice thickness in a river; Sewer, open channel;m;    30
