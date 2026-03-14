@@ -86,8 +86,8 @@ file=..\SWMM\LIDRep_BRC.txt
 file=..\SWMM\SWMM5_TimeSeriesFile.dat
 	
 # TALSIM
-file=..\TALSIM\TALSIM.wel
-	series=S103_1AB
+file=..\TALSIM\Talsim_states.KTR.WEL
+	series=KGRP_066
 
 # UVF
 file=..\UVF\42960.0_q_28.uvf

@@ -1,0 +1,19 @@
+[SETTINGS]
+Count=1
+[Zeitreihe1]
+SydroTyp=SydroErgZre
+ZRFormat=4
+ID=482
+Extension=.WEL
+Kennung=S001
+KennungLang={S001} {1AB, QQQ} Discharge
+Zustand=1AB
+Datei=H:\DEV\BLUEM\CODE\BlueM.Datasets\Wave\TALSIM\TALSIM.WEL
+GeaendertAm=
+Modell=TALSIM
+Herkunft=simuliert
+Interpretation=2
+SimVariante=
+Simulation=
+Einheit=m3/s
+EndZeitreihe
