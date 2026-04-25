@@ -3,6 +3,6 @@ SydroTyp=SydroErgZre
 ZRFormat=4
 Kennung=ZPG
 Zustand=040
-Datei=..\..\..\..\..\BlueM.Datasets\Wave\TALSIM\Talsim_states.KTR.WEL
+Datei=..\..\..\..\..\..\BlueM.Datasets\Wave\TALSIM\Talsim_states.KTR.WEL
 Interpretation=2
 EndZeitreihe
