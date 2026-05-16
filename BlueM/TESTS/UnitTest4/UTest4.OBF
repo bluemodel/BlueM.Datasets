@@ -8,6 +8,6 @@
 *| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei | SimGröße   | ZielFkt |        Evaluierungs Zeitraum         |         Referenzreihe                  | IstWert |
 *|     |               |         |   |       |       |            |         |        Start      |     Ende         | RefGröße | Datei                       |         |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------------------|------------------|----------|-----------------------------|---------|
- |  P  | SumFehlQ      |         | - |       |  WEL  | S3  _1ZU   | AbQuad  |                   |                  |          | ZRE\Zufl.zre                |         |
- |  P  | VolFehler     |         | - |       | WEL   | S3  _1ZU   | Volf    |                   |                  |          | ZRE\Zufl.zre                |         |
+ |  P  | SumFehlQ      |         | - |       |  WEL  | S3  _1ZU   | AE      |                   |                  |          | ZRE\Zufl.zre                |         |
+ |  P  | VolFehler     |         | - |       |  WEL  | S3  _1ZU   | BIAS    |                   |                  |          | ZRE\Zufl.zre                |         |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------------------|------------------|----------|-----------------------------|---------|

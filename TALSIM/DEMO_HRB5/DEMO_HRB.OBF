@@ -17,9 +17,9 @@
 *| Opt | Name          | Group   | D | OpFac | File  | SimResult  | ObjFunc | Evaluation period          | Reference value      | CurValue |
 *|     |               |         |   |       |       |            |         | Start            | End     | ValueType | RefValue |          |
 *|-----|---------------|---------|---|-------|-------|------------|---------|------------------|---------|-----------|----------|----------|
- |  P  | Spillway      |         | - |       |  WEL  | TOBM_QH1   |  Diff   |                  |         | Max       |    0     |          |
- |  P  | WaterLevel    |         | + |       |  WEL  | TOBM_WSP   |  Diff   | 06.04.2000 02:00 |         | Min       |    0     |          |
- |  P  | QDownstream   |         | - |       |  WEL  | S000_1ZU   |  Diff   |                  |         | Max       |    0     |          |
+ |  P  | Spillway      |         | - |       |  WEL  | TOBM_QH1   |  AE     |                  |         | Max       |    0     |          |
+ |  P  | WaterLevel    |         | + |       |  WEL  | TOBM_WSP   |  AE     | 06.04.2000 02:00 |         | Min       |    0     |          |
+ |  P  | QDownstream   |         | - |       |  WEL  | S000_1ZU   |  AE     |                  |         | Max       |    0     |          |
 *|-----|---------------|---------|---|-------|-------|------------|---------|------------------|---------|-----------|----------|----------|
 *
 *Aggregate

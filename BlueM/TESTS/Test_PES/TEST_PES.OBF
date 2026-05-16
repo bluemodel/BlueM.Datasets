@@ -17,12 +17,12 @@
 *| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei |   SimGröße | ZielFkt | EvalZeitraum |   Referenzwert    | IstWert |
 *|     |               |         |   |       |       |            |         | Start | Ende | WertTyp | RefWert |         |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|---------|
- |  P  |   S001 Q ab   |         | - |       |  WEL  | S001_1AB   | Diff    |       |      | MaxWert |       0 |         |
-*|  P  |   S001 WSP    |         | - |       |  WEL  | S001_WSP   | Diff    |       |      | MaxWert |       0 |         |
- |  P  |   S002 Q ab   |         | - |       |  WEL  | S002_1AB   | Diff    |       |      | MaxWert |       0 |         |
-*|  P  |   S002 WSP    |         | - |       |  WEL  | S002_WSP   | Diff    |       |      | MaxWert |       0 |         |
- |  P  |   S004 Q ab   |         | - |       |  WEL  | S004_1AB   | Diff    |       |      | MaxWert |       0 |         |
-*|  P  |   S004 WSP    |         | - |       |  WEL  | S004_WSP   | Diff    |       |      | MaxWert |       0 |         |
+ |  P  |   S001 Q ab   |         | - |       |  WEL  | S001_1AB   | AE      |       |      | Max     |       0 |         |
+*|  P  |   S001 WSP    |         | - |       |  WEL  | S001_WSP   | AE      |       |      | Max     |       0 |         |
+ |  P  |   S002 Q ab   |         | - |       |  WEL  | S002_1AB   | AE      |       |      | Max     |       0 |         |
+*|  P  |   S002 WSP    |         | - |       |  WEL  | S002_WSP   | AE      |       |      | Max     |       0 |         |
+ |  P  |   S004 Q ab   |         | - |       |  WEL  | S004_1AB   | AE      |       |      | Max     |       0 |         |
+*|  P  |   S004 WSP    |         | - |       |  WEL  | S004_WSP   | AE      |       |      | Max     |       0 |         |
 *|-----|---------------|---------|---|-------|-------|------------|---------|-------|------|---------|---------|---------|
 *
 *Aggregate

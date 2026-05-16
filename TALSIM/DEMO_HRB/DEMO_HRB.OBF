@@ -17,9 +17,9 @@
 *| Opt | Bezeichnung   | Gruppe  | R | OpFak | Datei |   SimGröße | ZielFkt |     EvalZeitraum        |   Referenzwert    | IstWert |
 *|     |               |         |   |       |       |            |         | Start            | Ende | WertTyp | RefWert |         |
 *|-----|---------------|---------|---|-------|-------|------------|---------|------------------|------|---------|---------|---------|
- |  P  | HWEntlastung  |         | - |       |  WEL  | TOBM_QH1   |  Diff   |                  |      | MaxWert |    0    |    0    |
- |  P  | MinWSP        |         | + |       |  WEL  | TOBM_WSP   |  Diff   | 06.04.2000 02:00 |      | MinWert |    0    |  174.25 |
- |  P  | Q_Unterlauf   |         | - |       |  WEL  | S000_1ZU   |  Diff   |                  |      | MaxWert |    0    |  3.877  |
+ |  P  | HWEntlastung  |         | - |       |  WEL  | TOBM_QH1   |  AE     |                  |      | Max     |    0    |    0    |
+ |  P  | MinWSP        |         | + |       |  WEL  | TOBM_WSP   |  AE     | 06.04.2000 02:00 |      | Min     |    0    |  174.25 |
+ |  P  | Q_Unterlauf   |         | - |       |  WEL  | S000_1ZU   |  AE     |                  |      | Max     |    0    |  3.877  |
 *|-----|---------------|---------|---|-------|-------|------------|---------|------------------|------|---------|---------|---------|
 *
 *Aggregate
